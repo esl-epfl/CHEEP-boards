@@ -73,7 +73,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "HTB.kicad_prl",
+    "filename": "cheep-boards.kicad_prl",
     "version": 3
   },
   "project": {
