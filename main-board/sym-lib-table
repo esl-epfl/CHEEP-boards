@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "HTB-lib")(type "KiCad")(uri "${KIPRJMOD}/HTB-lib.kicad_sym")(options "")(descr ""))
+  (lib (name "External-lib")(type "KiCad")(uri "${KIPRJMOD}/LibLoader/SamacSys_Parts.kicad_sym")(options "")(descr ""))
+  (lib (name "Heep")(type "KiCad")(uri "${KIPRJMOD}/heep_symbol/heepocrates.kicad_sym")(options "")(descr ""))
+)
