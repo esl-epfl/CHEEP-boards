@@ -1,4 +1,4 @@
-24258555489934041
+24255041438363281
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97531,28 +97531,7 @@ EPFL
 0
 0
 heep_footprints
-EPFL_2x7
-
-
-0
-0
-0
-heep_footprints
-EPFL_3x1
-
-
-0
-0
-0
-heep_footprints
 ESL
-
-
-0
-0
-0
-heep_footprints
-ESL_3x3
 
 
 0
@@ -97593,3 +97572,10 @@ heepocrates_logo
 0
 0
 0
+sockets
+CONN_5205_3MM
+
+264-5205-01 
+0
+67
+67

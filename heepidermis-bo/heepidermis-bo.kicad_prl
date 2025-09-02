@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 40,
+    "active_layer": 44,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -38,7 +38,6 @@
       9,
       10,
       11,
-      12,
       13,
       15,
       16,
@@ -64,8 +63,8 @@
       39,
       40
     ],
-    "visible_layers": "ffcdfff_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "ffdfeff_ffffffff",
+    "zone_display_mode": 1
   },
   "git": {
     "repo_password": "",
@@ -74,7 +73,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "chewing-gum.kicad_prl",
+    "filename": "heepidermis-bo.kicad_prl",
     "version": 3
   },
   "project": {

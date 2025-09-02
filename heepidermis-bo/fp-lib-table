@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/QFN64_Socket/footprints.pretty")(options "")(descr ""))
+  (lib (name "sockets")(type "KiCad")(uri "${KIPRJMOD}/QFN64_Socket/sockets.pretty")(options "")(descr ""))
+  (lib (name "heep_footprints")(type "KiCad")(uri "/home/juan/Desktop/ESL/t_cheep_boards/htb/heep_footprints.pretty")(options "")(descr ""))
+)
