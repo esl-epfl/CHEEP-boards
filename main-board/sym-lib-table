@@ -3,4 +3,5 @@
   (lib (name "HTB-lib")(type "KiCad")(uri "${KIPRJMOD}/HTB-lib.kicad_sym")(options "")(descr ""))
   (lib (name "External-lib")(type "KiCad")(uri "${KIPRJMOD}/LibLoader/SamacSys_Parts.kicad_sym")(options "")(descr ""))
   (lib (name "Heep")(type "KiCad")(uri "${KIPRJMOD}/heep_symbol/heepocrates.kicad_sym")(options "")(descr ""))
+  (lib (name "cheeps-tb")(type "KiCad")(uri "/home/juan/Desktop/ESL/t_cheep_boards/cheeps-tb.kicad_sym")(options "")(descr ""))
 )

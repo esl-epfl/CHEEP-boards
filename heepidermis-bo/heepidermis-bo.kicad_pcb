@@ -476,7 +476,7 @@
 			(uuid "e4b75a24-fe92-4e05-b200-03595c0a4afd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.635 9.525 360)
+			(at 0.635 9.525 0)
 			(layer "F.Fab")
 			(uuid "ba19355e-b630-4cde-ad0e-cde929adaad6")
 			(effects
@@ -2193,7 +2193,7 @@
 			)
 		)
 		(property "Footprint" "heep_footprints:EPFL"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "666f1c99-2ce1-468c-b519-6719a10ba6cb")
@@ -2205,7 +2205,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6713869f-3fcd-4fe5-b720-5de3747fa140")
@@ -2217,7 +2217,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c878278a-b201-4082-a0e6-f5d388a74cc0")
@@ -3091,7 +3091,7 @@
 			(uuid "8e045102-6fd9-45ef-b4c6-5cf5b81a33f3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 11.43 360)
+			(at 1.27 11.43 0)
 			(layer "F.Fab")
 			(uuid "e0ad4529-105a-412f-a8c8-f13e2a34e608")
 			(effects
@@ -4945,7 +4945,7 @@
 			)
 		)
 		(property "Footprint" "heep_footprints:ESL"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fcfddd30-2ae9-4aab-9da2-a34e67cf140b")
@@ -4957,7 +4957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bf955ad3-23e8-496a-886c-bd7bd4bbbceb")
@@ -4969,7 +4969,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "116c4d01-a73c-48ab-a30b-3aad27d413bc")
@@ -8129,6 +8129,22 @@
 		(layer "B.Cu")
 		(net 13)
 		(uuid "3caf978f-33e8-4769-a012-e0e5b924ef66")
+	)
+	(segment
+		(start 140.5285 116.8485)
+		(end 140.74 117.06)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 13)
+		(uuid "6dbc2a2b-26a0-4026-9ed6-917ba7256359")
+	)
+	(segment
+		(start 140.5285 116.75)
+		(end 140.5285 116.8485)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 13)
+		(uuid "86c926ca-4527-4884-8aed-5f5d2d0c49ac")
 	)
 	(segment
 		(start 138.500001 106.748001)

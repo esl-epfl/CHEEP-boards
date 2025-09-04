@@ -5,126 +5,6 @@
 	(uuid "c199eb24-c33c-4d87-8bb8-b17a18fed446")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Socket"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01_Socket"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x01_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
 				(offset 1.016) hide)
@@ -2185,12 +2065,6 @@
 		(uuid "41fb6722-d7d7-4510-96ec-da707f730105")
 	)
 	(junction
-		(at 142.24 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ad00904-217f-4bc7-9dc1-7214453f10f3")
-	)
-	(junction
 		(at 142.24 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2238,6 +2112,26 @@
 		(color 0 0 0 0)
 		(uuid "ff74fbf1-a8ee-4ffe-b012-5f09e6ad9465")
 	)
+	(no_connect
+		(at 116.84 147.32)
+		(uuid "483a75d4-6cbe-460d-b346-870fc19e389c")
+	)
+	(no_connect
+		(at 143.51 173.99)
+		(uuid "4917d142-0cf8-424e-a946-ccd27ec531e6")
+	)
+	(no_connect
+		(at 149.86 142.24)
+		(uuid "68fe4769-9432-4013-8324-dd6994ee30fd")
+	)
+	(no_connect
+		(at 149.86 139.7)
+		(uuid "8d78797e-aca0-4dca-a14f-5ab236150bcd")
+	)
+	(no_connect
+		(at 116.84 144.78)
+		(uuid "b2cef9ce-48c5-4f03-b5e6-5a2b76867ddd")
+	)
 	(wire
 		(pts
 			(xy 39.37 95.25) (xy 39.37 99.695)
@@ -2257,16 +2151,6 @@
 			(type default)
 		)
 		(uuid "0e1c663c-2e69-405a-a4d0-e18aa054b9ca")
-	)
-	(wire
-		(pts
-			(xy 142.24 173.99) (xy 144.78 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11db1652-ae8a-466f-bb98-10e8010a8a53")
 	)
 	(wire
 		(pts
@@ -2440,16 +2324,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 53.34) (xy 142.24 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70e4e2ee-3eb0-408d-bd2f-5d6f68a5c224")
-	)
-	(wire
-		(pts
 			(xy 67.31 170.18) (xy 87.63 170.18)
 		)
 		(stroke
@@ -2497,16 +2371,6 @@
 			(type default)
 		)
 		(uuid "878e7820-60fe-474d-9609-4061e3582cdb")
-	)
-	(wire
-		(pts
-			(xy 152.4 53.34) (xy 142.24 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89b59901-d4af-42f9-8800-d618abbe24ec")
 	)
 	(wire
 		(pts
@@ -2587,6 +2451,16 @@
 			(type default)
 		)
 		(uuid "a262f09e-2c4f-43e1-9edd-d6d6e2dcbaa2")
+	)
+	(wire
+		(pts
+			(xy 143.51 173.99) (xy 144.78 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a28303de-3168-448f-ba00-effc8586048c")
 	)
 	(wire
 		(pts
@@ -2838,6 +2712,16 @@
 		)
 		(uuid "fd5541ed-1abe-45b6-bd14-3365a426fd27")
 	)
+	(wire
+		(pts
+			(xy 143.51 176.53) (xy 144.78 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa316e1-a82f-4b22-a93e-66f3a899ac04")
+	)
 	(text "1-2: Trimmer Control\n2-3: DAC Control\n"
 		(exclude_from_sim no)
 		(at 78.232 117.094 0)
@@ -2950,16 +2834,6 @@
 		)
 		(uuid "6e7a3973-b988-4e7b-8c08-2c08a41b19a3")
 	)
-	(label "GND"
-		(at 149.86 142.24 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "78499328-9f6e-4f20-8648-3010a0ca98dc")
-	)
 	(label "3V3"
 		(at 53.34 83.82 180)
 		(effects
@@ -3011,7 +2885,7 @@
 		(uuid "9cf68308-2ac1-4e11-83ec-d2609c62ce7b")
 	)
 	(label "V_diff_ampl_out"
-		(at 142.24 173.99 180)
+		(at 143.51 176.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3089,6 +2963,16 @@
 			(justify left bottom)
 		)
 		(uuid "d99c57b2-5a72-476c-a968-4532aefc8a41")
+	)
+	(label "GND"
+		(at 149.86 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e87b20f9-5844-4b42-9633-1238ebc0ac9a")
 	)
 	(label "V_out"
 		(at 143.51 55.88 0)
@@ -5273,73 +5157,6 @@
 			(project "chewing-gum"
 				(path "/c199eb24-c33c-4d87-8bb8-b17a18fed446"
 					(reference "#PWR6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 157.48 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b07e0ded-e3e4-42b8-a08f-341a2b8dc2cd")
-		(property "Reference" "J6"
-			(at 157.48 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x01_Socket"
-			(at 165.735 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector:Banana_Jack_1Pin"
-			(at 157.48 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "99975eab-6b9f-427a-9b4c-f1b2b8f5c218")
-		)
-		(instances
-			(project "chewing-gum"
-				(path "/c199eb24-c33c-4d87-8bb8-b17a18fed446"
-					(reference "J6")
 					(unit 1)
 				)
 			)
