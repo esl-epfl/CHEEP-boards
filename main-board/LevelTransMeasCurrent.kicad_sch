@@ -33,20 +33,22 @@
 				)
 			)
 			(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
-				(at 0 -3.81 0)
+				(at 1.27 -12.065 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ts5a23159.pdf"
-				(at -26.67 -8.89 0)
+				(at 1.27 -13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
@@ -87,8 +89,8 @@
 			)
 			(symbol "TS5A23159DGS_1_1"
 				(rectangle
-					(start -3.81 5.08)
-					(end 3.81 -5.08)
+					(start -3.81 4.445)
+					(end 3.81 -4.445)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -385,8 +387,8 @@
 			)
 			(symbol "TS5A23159DGS_2_1"
 				(rectangle
-					(start -3.81 5.08)
-					(end 3.81 -5.08)
+					(start -3.81 4.445)
+					(end 3.81 -4.445)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -762,7 +764,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -780,7 +782,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA"
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -789,7 +791,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO*"
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2133,7 +2135,7 @@
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "OE"
+					(name "TRI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3458,9 +3460,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3558,8 +3560,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3578,9 +3580,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3654,8 +3656,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7241,7 +7243,7 @@
 		)
 		(uuid "e3cddeb8-1bad-47a5-9f70-1523fd638200")
 	)
-	(label "FLASH_CS"
+	(label "FLASH_BS"
 		(at 123.825 50.165 0)
 		(effects
 			(font
@@ -7411,7 +7413,7 @@
 		)
 		(uuid "471e6ce6-eddb-45dd-8bbc-9303f06424b1")
 	)
-	(label "HEEP_CLOCK_SEL_VIO"
+	(label "HEEP_BLOCK_SEL_VIO"
 		(at 328.93 228.092 180)
 		(effects
 			(font
@@ -7471,7 +7473,7 @@
 		)
 		(uuid "65a19aa6-5a4e-4464-8d25-bd5a2947b951")
 	)
-	(label "HEEP_CLOCK_SEL_VIO"
+	(label "HEEP_BLOCK_SEL_VIO"
 		(at 191.77 147.32 0)
 		(effects
 			(font
@@ -7521,7 +7523,7 @@
 		)
 		(uuid "7f9c7884-4a0c-4fbe-a52c-e7c3f18bc303")
 	)
-	(label "FLASH_CS_B_FTDI"
+	(label "FLASH_BS_A_FTDI"
 		(at 45.085 145.415 0)
 		(effects
 			(font
@@ -7621,7 +7623,7 @@
 		)
 		(uuid "9a8e655f-937b-46ae-9dc7-365848be8321")
 	)
-	(label "FLASH_CS_FTDI_VIO"
+	(label "FLASH_BS_FTDI_VIO"
 		(at 64.77 97.155 0)
 		(effects
 			(font
@@ -7651,7 +7653,7 @@
 		)
 		(uuid "a175631a-48b8-45a8-92ca-8de169a6ab95")
 	)
-	(label "FLASH_CS_FTDI_VIO"
+	(label "FLASH_BS_FTDI_VIO"
 		(at 103.505 145.415 0)
 		(effects
 			(font
@@ -7771,7 +7773,7 @@
 		)
 		(uuid "e19e7ffe-8078-41c8-82cb-4df107543177")
 	)
-	(label "FLASH_CS"
+	(label "FLASH_BS"
 		(at 37.465 99.695 0)
 		(effects
 			(font
@@ -7954,7 +7956,7 @@
 		)
 		(uuid "4869abac-9f70-48dc-9a25-a9eec85cbf72")
 	)
-	(hierarchical_label "FLASH_CS_B_FTDI"
+	(hierarchical_label "FLASH_BS_A_FTDI"
 		(shape input)
 		(at 45.085 145.415 180)
 		(effects
@@ -8020,7 +8022,7 @@
 		)
 		(uuid "6db7f364-75f8-4dfc-a171-393cf15bdf68")
 	)
-	(hierarchical_label "HEEP_CLOCK"
+	(hierarchical_label "HEEP_BLOCK"
 		(shape output)
 		(at 382.905 200.66 270)
 		(effects
@@ -8042,7 +8044,7 @@
 		)
 		(uuid "7fee5f3d-e6df-4aea-b5a1-48be00601d52")
 	)
-	(hierarchical_label "spi_flash_cs"
+	(hierarchical_label "spi_flash_Bs"
 		(shape input)
 		(at 65.405 102.235 0)
 		(effects
@@ -8119,7 +8121,7 @@
 		)
 		(uuid "943a3ba8-2f3c-4043-b223-44c38e45d53e")
 	)
-	(hierarchical_label "HEEP_CLOCK_SEL"
+	(hierarchical_label "HEEP_BLOCK_SEL"
 		(shape input)
 		(at 142.875 147.32 180)
 		(effects
@@ -8438,7 +8440,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 324.866 239.268 0)
 			(effects
 				(font
@@ -8503,7 +8505,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 331.47 187.325 0)
 			(effects
 				(font
@@ -8569,7 +8571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 128.27 164.465 0)
 			(effects
 				(font
@@ -8636,7 +8638,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 128.905 0)
 			(effects
 				(font
@@ -8732,7 +8734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 326.39 216.916 0)
 			(effects
 				(font
@@ -8820,7 +8822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9554a.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tca9554.pdf"
 			(at 307.975 121.285 0)
 			(effects
 				(font
@@ -8829,7 +8831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8 Bit Port/Expander, I2C SMBUS, Interrupt output, SSOP-16"
 			(at 310.515 118.745 0)
 			(effects
 				(font
@@ -8948,7 +8950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 319.786 234.696 0)
 			(effects
 				(font
@@ -9020,7 +9022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 153.035 177.165 0)
 			(effects
 				(font
@@ -9116,7 +9118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 198.12 41.91 0)
 			(effects
 				(font
@@ -9212,7 +9214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 309.245 62.865 0)
 			(effects
 				(font
@@ -9278,7 +9280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 213.995 44.45 0)
 			(effects
 				(font
@@ -9344,7 +9346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 376.555 50.165 0)
 			(effects
 				(font
@@ -9410,7 +9412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 94.615 45.085 0)
 			(effects
 				(font
@@ -9505,7 +9507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 103.505 160.655 0)
 			(effects
 				(font
@@ -9570,7 +9572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 83.185 177.165 0)
 			(effects
 				(font
@@ -9635,7 +9637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 152.4 99.695 0)
 			(effects
 				(font
@@ -9727,7 +9729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 143.51 74.93 0)
 			(effects
 				(font
@@ -9793,7 +9795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 143.51 36.83 0)
 			(effects
 				(font
@@ -9859,7 +9861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 166.37 44.45 0)
 			(effects
 				(font
@@ -9925,7 +9927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 156.845 127.635 0)
 			(effects
 				(font
@@ -10021,7 +10023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 72.39 130.175 0)
 			(effects
 				(font
@@ -10087,7 +10089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 313.055 50.165 0)
 			(effects
 				(font
@@ -10153,7 +10155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 156.845 130.175 0)
 			(effects
 				(font
@@ -10219,7 +10221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 336.55 178.435 0)
 			(effects
 				(font
@@ -10315,7 +10317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 277.495 107.315 0)
 			(effects
 				(font
@@ -10381,7 +10383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 108.585 139.7 0)
 			(effects
 				(font
@@ -10445,7 +10447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 184.15 99.695 0)
 			(effects
 				(font
@@ -10538,7 +10540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 136.652 233.68 0)
 			(effects
 				(font
@@ -10604,7 +10606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 63.5 139.065 0)
 			(effects
 				(font
@@ -10683,7 +10685,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "heep_footprints:TI-UQFN-16"
+		(property "Footprint" "SN74AXC4T774BQBR"
 			(at 300.99 40.005 0)
 			(effects
 				(font
@@ -10884,7 +10886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 352.552 233.045 0)
 			(effects
 				(font
@@ -10950,7 +10952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 88.265 125.095 0)
 			(effects
 				(font
@@ -10999,7 +11001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "heep_footprints:TI-UQFN-16"
+		(property "Footprint" "SN74AXC4T774BQBR"
 			(at 182.88 132.08 0)
 			(effects
 				(font
@@ -11201,7 +11203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 294.64 30.48 0)
 			(effects
 				(font
@@ -11297,7 +11299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 159.385 177.165 0)
 			(effects
 				(font
@@ -11392,7 +11394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 310.515 133.985 0)
 			(effects
 				(font
@@ -11458,7 +11460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 71.755 221.615 0)
 			(effects
 				(font
@@ -11497,7 +11499,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "Conn_Boaxial"
 			(at 396.875 199.39 90)
 			(effects
 				(font
@@ -11515,7 +11517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "~"
 			(at 392.43 193.675 0)
 			(effects
 				(font
@@ -11524,7 +11526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
 			(at 392.43 193.675 0)
 			(effects
 				(font
@@ -11594,7 +11596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 324.485 123.825 0)
 			(effects
 				(font
@@ -11660,7 +11662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 50.165 56.515 0)
 			(effects
 				(font
@@ -11756,7 +11758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 371.475 193.675 0)
 			(effects
 				(font
@@ -11833,7 +11835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 321.945 133.985 0)
 			(effects
 				(font
@@ -11899,7 +11901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 159.385 55.88 0)
 			(effects
 				(font
@@ -11992,7 +11994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 48.26 253.365 0)
 			(effects
 				(font
@@ -12088,7 +12090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 143.51 55.88 0)
 			(effects
 				(font
@@ -12180,7 +12182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 171.45 176.53 0)
 			(effects
 				(font
@@ -12246,7 +12248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 357.505 179.705 0)
 			(effects
 				(font
@@ -12341,7 +12343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 87.63 99.695 0)
 			(effects
 				(font
@@ -12434,7 +12436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 84.455 45.085 0)
 			(effects
 				(font
@@ -12529,7 +12531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 186.69 156.845 0)
 			(effects
 				(font
@@ -12595,7 +12597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 99.187 208.28 0)
 			(effects
 				(font
@@ -12661,7 +12663,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 106.045 139.7 0)
 			(effects
 				(font
@@ -12756,7 +12758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 55.88 99.695 0)
 			(effects
 				(font
@@ -12847,7 +12849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 206.375 120.65 0)
 			(effects
 				(font
@@ -12940,7 +12942,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 25.4 206.375 0)
 			(effects
 				(font
@@ -13035,7 +13037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 139.7 170.815 0)
 			(effects
 				(font
@@ -13110,7 +13112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 127.635 0)
 			(effects
 				(font
@@ -13206,7 +13208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 142.367 220.98 0)
 			(effects
 				(font
@@ -13302,7 +13304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 68.58 221.615 0)
 			(effects
 				(font
@@ -13398,7 +13400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 67.945 125.095 0)
 			(effects
 				(font
@@ -13464,7 +13466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 353.06 79.375 0)
 			(effects
 				(font
@@ -13530,7 +13532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 372.745 62.865 0)
 			(effects
 				(font
@@ -13697,7 +13699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 358.14 31.75 0)
 			(effects
 				(font
@@ -13793,7 +13795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 315.595 100.33 0)
 			(effects
 				(font
@@ -13860,7 +13862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 123.825 0)
 			(effects
 				(font
@@ -13956,7 +13958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 89.535 45.085 0)
 			(effects
 				(font
@@ -14052,7 +14054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 198.12 44.45 0)
 			(effects
 				(font
@@ -14118,7 +14120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 234.315 0)
 			(effects
 				(font
@@ -14184,7 +14186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 191.77 139.7 0)
 			(effects
 				(font
@@ -14279,7 +14281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 360.68 179.705 0)
 			(effects
 				(font
@@ -14346,7 +14348,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 335.28 116.205 0)
 			(effects
 				(font
@@ -14412,7 +14414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 101.727 203.2 0)
 			(effects
 				(font
@@ -14478,7 +14480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 326.39 178.435 0)
 			(effects
 				(font
@@ -14574,7 +14576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 310.515 95.25 0)
 			(effects
 				(font
@@ -14640,7 +14642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 292.1 25.4 0)
 			(effects
 				(font
@@ -14706,7 +14708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 289.56 79.375 0)
 			(effects
 				(font
@@ -14772,7 +14774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 182.245 44.45 0)
 			(effects
 				(font
@@ -14838,7 +14840,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 213.995 41.91 0)
 			(effects
 				(font
@@ -14934,7 +14936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 28.575 203.835 0)
 			(effects
 				(font
@@ -14999,7 +15001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 342.265 175.895 0)
 			(effects
 				(font
@@ -15064,7 +15066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 215.9 99.695 0)
 			(effects
 				(font
@@ -15157,7 +15159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 25.4 208.915 0)
 			(effects
 				(font
@@ -15223,7 +15225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 182.245 41.91 0)
 			(effects
 				(font
@@ -15319,7 +15321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 99.695 45.085 0)
 			(effects
 				(font
@@ -15415,7 +15417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 337.82 220.218 0)
 			(effects
 				(font
@@ -15511,7 +15513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 149.86 41.91 0)
 			(effects
 				(font
@@ -15607,7 +15609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 313.055 100.33 0)
 			(effects
 				(font
@@ -15703,7 +15705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 191.135 55.88 0)
 			(effects
 				(font
@@ -15918,7 +15920,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 378.46 209.55 0)
 			(effects
 				(font
@@ -15997,7 +15999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 118.745 0)
 			(effects
 				(font
@@ -16092,7 +16094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 50.165 65.405 0)
 			(effects
 				(font
@@ -16147,7 +16149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_NDK-NX3225GA-25-000M-STD-CRG-2_C1985619.pdf"
+		(property "Datasheet" "~"
 			(at 331.47 182.245 0)
 			(effects
 				(font
@@ -16156,7 +16158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 331.47 182.245 0)
 			(effects
 				(font
@@ -16240,7 +16242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 99.187 205.74 0)
 			(effects
 				(font
@@ -16319,7 +16321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "heep_footprints:TI-UQFN-16"
+		(property "Footprint" "SN74AXC4T774BQBR"
 			(at 132.842 210.82 0)
 			(effects
 				(font
@@ -16521,7 +16523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 147.955 130.81 0)
 			(effects
 				(font
@@ -16617,7 +16619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 355.6 27.94 0)
 			(effects
 				(font
@@ -16683,7 +16685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 207.01 55.88 0)
 			(effects
 				(font
@@ -16776,7 +16778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 326.39 219.456 0)
 			(effects
 				(font
@@ -16842,7 +16844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 374.015 50.165 0)
 			(effects
 				(font
@@ -16939,7 +16941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 111.125 0)
 			(effects
 				(font
@@ -17035,7 +17037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 139.7 0)
 			(effects
 				(font
@@ -17101,7 +17103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 166.37 41.91 0)
 			(effects
 				(font
@@ -17197,7 +17199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 173.99 124.46 0)
 			(effects
 				(font
@@ -17263,7 +17265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 360.68 31.75 0)
 			(effects
 				(font
@@ -17329,7 +17331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 346.075 172.72 0)
 			(effects
 				(font
@@ -17425,7 +17427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 149.86 44.45 0)
 			(effects
 				(font
@@ -17490,7 +17492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 159.385 181.61 0)
 			(effects
 				(font
@@ -17556,7 +17558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 45.72 257.81 0)
 			(effects
 				(font
@@ -17622,7 +17624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 349.885 172.085 0)
 			(effects
 				(font
@@ -17689,7 +17691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 126.365 0)
 			(effects
 				(font
@@ -17785,7 +17787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 144.907 220.98 0)
 			(effects
 				(font
@@ -17852,7 +17854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 328.93 116.205 0)
 			(effects
 				(font
@@ -17949,7 +17951,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 113.665 0)
 			(effects
 				(font
@@ -18044,7 +18046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 119.38 99.695 0)
 			(effects
 				(font
@@ -18137,7 +18139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 121.412 249.555 0)
 			(effects
 				(font
@@ -18186,7 +18188,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "heep_footprints:TI-UQFN-16"
+		(property "Footprint" "SN74AXC4T774BQBR"
 			(at 59.69 211.455 0)
 			(effects
 				(font
@@ -18387,7 +18389,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 351.155 204.47 0)
 			(effects
 				(font
@@ -18452,7 +18454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 31.75 250.19 0)
 			(effects
 				(font
@@ -18504,7 +18506,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "heep_footprints:TI-UQFN-16"
+		(property "Footprint" "SN74AXC4T774BQBR"
 			(at 97.155 132.715 0)
 			(effects
 				(font
@@ -18704,7 +18706,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CMOS Clock Oscillator"
 			(at 352.552 223.52 0)
 			(effects
 				(font
@@ -18779,7 +18781,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 297.18 30.48 0)
 			(effects
 				(font
@@ -18845,7 +18847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 310.515 50.165 0)
 			(effects
 				(font
@@ -18941,7 +18943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 277.495 133.35 0)
 			(effects
 				(font
@@ -19007,7 +19009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 392.43 198.755 0)
 			(effects
 				(font
@@ -19056,7 +19058,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "heep_footprints:TI-UQFN-16"
+		(property "Footprint" "SN74AXC4T774BQBR"
 			(at 364.49 40.005 0)
 			(effects
 				(font
@@ -19259,7 +19261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 121.285 0)
 			(effects
 				(font
@@ -19356,7 +19358,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 283.21 116.205 0)
 			(effects
 				(font
@@ -19452,7 +19454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual SPDT 1ohm Bidirectional Analog Switch with Off protection, VSSOP-10"
 			(at 175.26 55.88 0)
 			(effects
 				(font
@@ -19544,7 +19546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 153.035 181.61 0)
 			(effects
 				(font

@@ -4144,7 +4144,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 4.318 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4169,7 +4169,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4195,10 +4195,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_SPDT_0_0"
+			(symbol "SW_SPDT_0_1"
 				(circle
 					(center -2.032 0)
-					(radius 0.508)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -4209,21 +4221,7 @@
 				)
 				(circle
 					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.651 2.286)
-					)
+					(radius 0.4572)
 					(stroke
 						(width 0)
 						(type default)
@@ -4234,7 +4232,7 @@
 				)
 				(circle
 					(center 2.032 2.54)
-					(radius 0.508)
+					(radius 0.4572)
 					(stroke
 						(width 0)
 						(type default)
@@ -4245,6 +4243,17 @@
 				)
 			)
 			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -4301,452 +4310,11 @@
 				)
 			)
 		)
-		(symbol "cheeps-tb:chewing-gum"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "CG"
-				(at 1.778 31.75 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "chewing-gum_0_1"
-				(rectangle
-					(start 0 30.48)
-					(end 19.05 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "chewing-gum_1_1"
-				(pin output line
-					(at -2.54 1.27 0)
-					(length 2.54)
-					(name "OUT_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 27.94 0)
-					(length 2.54)
-					(name "TP_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 21.59 27.94 180)
-					(length 2.54)
-					(name "Enable"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 21.59 25.4 180)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 21.59 22.86 180)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 21.59 20.32 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 21.59 17.78 180)
-					(length 2.54)
-					(name "3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 21.59 15.24 180)
-					(length 2.54)
-					(name "REF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 21.59 8.89 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 21.59 6.35 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 21.59 3.81 180)
-					(length 2.54)
-					(name "OUT_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 3.81 0)
-					(length 2.54)
-					(name "OUT_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 21.59 1.27 180)
-					(length 2.54)
-					(name "OUT_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -2.54 90)
-					(length 2.54)
-					(name "OUT_0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 6.35 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 8.89 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 15.24 0)
-					(length 2.54)
-					(name "TP_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 17.78 0)
-					(length 2.54)
-					(name "TP_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 20.32 0)
-					(length 2.54)
-					(name "TP_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 22.86 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -2.54 25.4 0)
-					(length 2.54)
-					(name "DAC_in"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4844,8 +4412,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4864,9 +4432,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4940,8 +4508,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5357,6 +4925,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 46.99) (xy 170.18 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d846966-343f-485c-8ebd-3daff4774ee3")
+	)
+	(wire
+		(pts
 			(xy 36.83 99.06) (xy 49.53 99.06)
 		)
 		(stroke
@@ -5627,6 +5205,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 50.8) (xy 170.18 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "257bb25d-ed04-4c2c-ab3c-ed5b0ccf036c")
+	)
+	(wire
+		(pts
 			(xy 375.92 104.14) (xy 365.76 104.14)
 		)
 		(stroke
@@ -5744,6 +5332,16 @@
 			(type default)
 		)
 		(uuid "30562d40-3a43-40ff-9bb0-d07e87b510ad")
+	)
+	(wire
+		(pts
+			(xy 167.64 35.56) (xy 170.18 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "318eaa3e-f05c-4642-b5b7-c34d11b01869")
 	)
 	(wire
 		(pts
@@ -6157,6 +5755,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 50.8) (xy 203.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c2493b3-b8ec-47db-8539-ccd2d76098e0")
+	)
+	(wire
+		(pts
 			(xy 375.92 43.18) (xy 365.76 43.18)
 		)
 		(stroke
@@ -6224,6 +5832,16 @@
 			(type default)
 		)
 		(uuid "62256aaf-6535-4eae-b198-db472b56b81b")
+	)
+	(wire
+		(pts
+			(xy 167.64 31.75) (xy 170.18 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "627e5960-bfdf-489c-8660-1286c6ed2eb4")
 	)
 	(wire
 		(pts
@@ -6897,6 +6515,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 38.1) (xy 203.2 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d5e53f-b4e8-4c85-9f1d-b1ddcc00d0e9")
+	)
+	(wire
+		(pts
 			(xy 266.7 227.33) (xy 266.7 223.52)
 		)
 		(stroke
@@ -7354,6 +6982,16 @@
 			(type default)
 		)
 		(uuid "be971fab-5b6c-45b1-ab35-27251931e170")
+	)
+	(wire
+		(pts
+			(xy 185.42 60.96) (xy 185.42 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c319ac0c-2da7-4c2c-afc0-77e053dfa550")
 	)
 	(wire
 		(pts
@@ -8283,7 +7921,7 @@
 		)
 		(uuid "1266bd61-b3cd-45bb-8d56-0b004b99c624")
 	)
-	(label "blade_ck_H"
+	(label "blade_Bk_H"
 		(at 41.275 126.365 180)
 		(effects
 			(font
@@ -8513,7 +8151,7 @@
 		)
 		(uuid "38276073-7ddf-41c7-ace5-b1bbf8400243")
 	)
-	(label "EP_F_CS"
+	(label "EP_F_BS"
 		(at 39.37 74.93 180)
 		(effects
 			(font
@@ -8563,6 +8201,16 @@
 		)
 		(uuid "3f5c6e15-d62b-4d24-b16f-e6c06fd39d29")
 	)
+	(label "5V"
+		(at 167.64 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "40287e20-83dc-4524-bcf0-30d11730f001")
+	)
 	(label "EP_TDO"
 		(at 38.735 48.26 180)
 		(effects
@@ -8603,7 +8251,7 @@
 		)
 		(uuid "4e29a0e6-e255-4251-a46b-b152894ecd1c")
 	)
-	(label "SPI_CS0_HEEP"
+	(label "SPI_BS0_HEEP"
 		(at 369.57 166.37 180)
 		(effects
 			(font
@@ -8623,6 +8271,16 @@
 		)
 		(uuid "5241cb47-47a0-4922-a1ac-d3e7056bc3ba")
 	)
+	(label "SDA"
+		(at 167.64 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "525b21ad-2f4d-4e53-953c-653f37adeeb6")
+	)
 	(label "V_IO"
 		(at 365.76 109.22 180)
 		(effects
@@ -8633,7 +8291,17 @@
 		)
 		(uuid "52c1b787-acd0-4b87-a010-b6c8c563166d")
 	)
-	(label "blade_ck"
+	(label "3V3"
+		(at 167.64 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "559f28ed-4420-4f33-83a6-fe5c89654491")
+	)
+	(label "blade_Bk"
 		(at 118.11 126.365 0)
 		(effects
 			(font
@@ -8903,7 +8571,7 @@
 		)
 		(uuid "7bfe14db-3a7b-449f-87ca-2ec9dd00c139")
 	)
-	(label "SPI_CS1_HEEP"
+	(label "SPI_BS1_HEEP"
 		(at 369.57 168.91 180)
 		(effects
 			(font
@@ -8953,7 +8621,7 @@
 		)
 		(uuid "815990a6-a283-452f-b3ba-7a06470f4576")
 	)
-	(label "HEEP_CLOCK_SEL"
+	(label "HEEP_BLOCK_SEL"
 		(at 104.14 227.33 0)
 		(effects
 			(font
@@ -8973,7 +8641,7 @@
 		)
 		(uuid "83d6ecb7-12ba-4c76-a8bd-eb6864dcfeb6")
 	)
-	(label "HEEP_CLOCK_SEL"
+	(label "HEEP_BLOCK_SEL"
 		(at 41.91 117.475 180)
 		(effects
 			(font
@@ -9012,6 +8680,16 @@
 			(justify right bottom)
 		)
 		(uuid "8e0c7b7a-0fd5-4ed8-bb03-fc6fb6b11589")
+	)
+	(label "A3V3"
+		(at 203.2 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "906fed19-4153-47e9-bafc-f879a5eba0d6")
 	)
 	(label "GPIO7"
 		(at 365.76 74.93 180)
@@ -9193,7 +8871,7 @@
 		)
 		(uuid "a5c7e38d-c5d8-4ecb-979f-dfb501b85ad7")
 	)
-	(label "EP_F_CS"
+	(label "EP_F_BS"
 		(at 104.14 215.9 0)
 		(effects
 			(font
@@ -9273,7 +8951,7 @@
 		)
 		(uuid "ab8d1078-5244-4509-9b65-347da8c9573d")
 	)
-	(label "FLL_CLK_DIV_HEEP"
+	(label "FLL_BLK_DIV_HEEP"
 		(at 369.57 156.21 180)
 		(effects
 			(font
@@ -9543,6 +9221,16 @@
 		)
 		(uuid "d127f2a2-3d11-4df7-8577-489577f29046")
 	)
+	(label "GND"
+		(at 185.42 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d1e843dd-e1c1-4826-ac76-d858c6bfc35e")
+	)
 	(label "blade_scen_H"
 		(at 41.275 131.445 180)
 		(effects
@@ -9733,7 +9421,7 @@
 		)
 		(uuid "e6ee1e04-cbc8-483c-9ba3-d0276538142c")
 	)
-	(label "spi_flash_cs"
+	(label "spi_flash_Bs"
 		(at 116.205 69.85 0)
 		(effects
 			(font
@@ -9903,6 +9591,16 @@
 		)
 		(uuid "f933c14a-f045-4423-be4d-2f8f7982e7ae")
 	)
+	(label "REF"
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa32bd7a-91da-444e-8544-0e2112b17a6e")
+	)
 	(label "EN_VBLADE2"
 		(at 358.775 234.95 0)
 		(effects
@@ -9942,6 +9640,16 @@
 			(justify right bottom)
 		)
 		(uuid "fe519478-9d96-4c2c-bca8-c71167d0ccf0")
+	)
+	(label "SCL"
+		(at 167.64 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ff62a8a3-70ed-4d4d-929a-2f2a4c5028c4")
 	)
 	(hierarchical_label "VUSB"
 		(shape output)
@@ -10020,7 +9728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 266.7 229.87 0)
 			(effects
 				(font
@@ -10086,7 +9794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 219.71 208.915 0)
 			(effects
 				(font
@@ -10181,7 +9889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 335.915 80.645 0)
 			(effects
 				(font
@@ -10246,7 +9954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Switch, single pole double throw"
 			(at 327.66 78.105 0)
 			(effects
 				(font
@@ -10326,7 +10034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 365.76 137.16 0)
 			(effects
 				(font
@@ -10393,7 +10101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 375.92 55.88 0)
 			(effects
 				(font
@@ -10458,7 +10166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 215.773 271.653 0)
 			(effects
 				(font
@@ -10525,7 +10233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 377.19 189.23 0)
 			(effects
 				(font
@@ -10591,7 +10299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 381 208.661 0)
 			(effects
 				(font
@@ -10657,7 +10365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 220.345 231.14 0)
 			(effects
 				(font
@@ -10754,7 +10462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 171.323 258.318 0)
 			(effects
 				(font
@@ -10851,7 +10559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 208.915 213.995 0)
 			(effects
 				(font
@@ -10948,7 +10656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 194.183 267.208 0)
 			(effects
 				(font
@@ -11000,131 +10708,6 @@
 		)
 	)
 	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 204.47 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3cb2e32a-35e9-4cc6-a086-e04d1fa03e82")
-		(property "Reference" "CG11"
-			(at 213.995 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 213.995 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 204.47 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "2cb61fb8-7443-46c2-b2ab-1abc87448fbe")
-		)
-		(pin "6"
-			(uuid "51e82fa6-4593-481b-b730-a9f6af54bb80")
-		)
-		(pin "1"
-			(uuid "55ed3c23-0b15-4dbf-9043-afd16394bf84")
-		)
-		(pin "11"
-			(uuid "e32b88e5-7a22-40c3-bc00-24dfad417c47")
-		)
-		(pin "10"
-			(uuid "e1998df1-fe6a-4a6e-896a-03335ec13c33")
-		)
-		(pin "4"
-			(uuid "de18b57d-00d6-4609-b30d-93c9a473bb51")
-		)
-		(pin "5"
-			(uuid "c1bcb807-7e80-4253-ae23-c52568726b28")
-		)
-		(pin "9"
-			(uuid "53821214-9731-421d-9d48-190acb8756dd")
-		)
-		(pin "12"
-			(uuid "29399ebd-4e41-4d01-8b51-3648fc60d75b")
-		)
-		(pin "21"
-			(uuid "d49035b8-a980-4c16-9633-ba5fb96f8e2a")
-		)
-		(pin "8"
-			(uuid "d2f6d636-6e62-4b55-bb98-42be85a80cf0")
-		)
-		(pin "13"
-			(uuid "b8cd7bbe-d7e7-49de-9c2b-8c2891232552")
-		)
-		(pin "2"
-			(uuid "f3a33e35-fc9a-4db5-b798-2619aa616d7b")
-		)
-		(pin "15"
-			(uuid "c67eff81-d3cc-435d-9ad1-730978d8440a")
-		)
-		(pin "14"
-			(uuid "8c9067ad-672a-4d1c-a4cc-d35848fca4ef")
-		)
-		(pin "3"
-			(uuid "824d8266-be41-4caa-a27b-6f2de04779a4")
-		)
-		(pin "18"
-			(uuid "d8f4f9c7-a675-49df-804f-c4a88be4d591")
-		)
-		(pin "20"
-			(uuid "b5b9e8f6-2e38-4e27-a7db-72a665cfe4bf")
-		)
-		(pin "16"
-			(uuid "2d45c2d4-313a-4707-bab4-5528f6f59121")
-		)
-		(pin "7"
-			(uuid "c6199fce-6277-4f2a-a86c-30c2b6759fd3")
-		)
-		(pin "17"
-			(uuid "94feb97b-437f-403e-8448-9599834b4c78")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 318.135 132.08 180)
 		(unit 1)
@@ -11170,7 +10753,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 318.135 132.08 0)
 			(effects
 				(font
@@ -11247,7 +10830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 131.445 55.753 0)
 			(effects
 				(font
@@ -11311,7 +10894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 88.9 0)
 			(effects
 				(font
@@ -11387,7 +10970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 160.02 206.375 0)
 			(effects
 				(font
@@ -11439,131 +11022,6 @@
 		)
 	)
 	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 234.95 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "492c1a74-da1d-4d83-bdf3-59f129314a02")
-		(property "Reference" "CG12"
-			(at 244.475 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 244.475 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 234.95 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 234.95 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "8c928945-445c-4356-973c-7c5036fb8f25")
-		)
-		(pin "6"
-			(uuid "134dcea6-13be-4c5e-9d48-041130910db0")
-		)
-		(pin "1"
-			(uuid "f3743fcd-14bc-4175-9896-27c09edd40d1")
-		)
-		(pin "11"
-			(uuid "f06ab653-2287-479f-9ff0-cb0481cc8ad2")
-		)
-		(pin "10"
-			(uuid "2dbafb19-926f-41f1-a057-9569cf7646d6")
-		)
-		(pin "4"
-			(uuid "c76e3323-cbdc-42a8-82fe-37dde542f468")
-		)
-		(pin "5"
-			(uuid "b3c76729-5c96-45e0-9338-4db27f350c89")
-		)
-		(pin "9"
-			(uuid "b76bf1b2-741f-4e78-987f-e072224f5830")
-		)
-		(pin "12"
-			(uuid "53e7b0a5-f4d7-4a84-ba90-f25a86f91b17")
-		)
-		(pin "21"
-			(uuid "2f181a1b-de20-4d42-bf42-a2c35b32f690")
-		)
-		(pin "8"
-			(uuid "80ce02a2-3b5d-4000-a65b-2c9130ec7b6a")
-		)
-		(pin "13"
-			(uuid "7aa4bfe4-d003-4a50-85e2-c6b8ece4af58")
-		)
-		(pin "2"
-			(uuid "608b2839-b2cb-4c41-a96b-473103fe9eee")
-		)
-		(pin "15"
-			(uuid "8845446d-3507-45c7-8c4c-51713828c52a")
-		)
-		(pin "14"
-			(uuid "77140cb8-b371-4d0b-baba-26e814b7d129")
-		)
-		(pin "3"
-			(uuid "0d59863a-5c46-44e4-a23c-892676357d84")
-		)
-		(pin "18"
-			(uuid "4b5e9089-1e43-49e1-ba47-65134774d1b7")
-		)
-		(pin "20"
-			(uuid "33da3e7e-1d8c-46ce-8578-8218d7d54b44")
-		)
-		(pin "16"
-			(uuid "764c7099-22ac-4e24-81eb-383157e87086")
-		)
-		(pin "7"
-			(uuid "57f7708e-746e-455e-858b-97609bacd146")
-		)
-		(pin "17"
-			(uuid "4c5aa731-7282-489f-8c40-3f604a73ba18")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 392.43 247.65 0)
 		(unit 1)
@@ -11607,7 +11065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 392.43 247.65 0)
 			(effects
 				(font
@@ -11672,7 +11130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 369.57 186.69 0)
 			(effects
 				(font
@@ -11740,7 +11198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 384.81 173.99 0)
 			(effects
 				(font
@@ -11844,7 +11302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9554a.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tca9554.pdf"
 			(at 378.46 234.95 0)
 			(effects
 				(font
@@ -11853,7 +11311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8 Bit Port/Expander, I2C SMBUS, Interrupt output, SSOP-16"
 			(at 381 232.41 0)
 			(effects
 				(font
@@ -11974,7 +11432,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 196.85 219.71 0)
 			(effects
 				(font
@@ -12002,131 +11460,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "R58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 173.99 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52cf55e0-48a1-4f89-804d-626114da7567")
-		(property "Reference" "CG10"
-			(at 183.515 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 183.515 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 173.99 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "b9a766a3-9e44-4760-ac66-c1d1ac9dc93e")
-		)
-		(pin "6"
-			(uuid "79157f44-79a1-439b-b01c-7f2cf27c8c40")
-		)
-		(pin "1"
-			(uuid "d39efd68-c7da-43cb-a114-a21b5ddf74b9")
-		)
-		(pin "11"
-			(uuid "4703fd69-e3c0-40d8-83d8-dd73a3a9f6b1")
-		)
-		(pin "10"
-			(uuid "2e529f5b-124f-4f94-ab1d-4fe04f45b350")
-		)
-		(pin "4"
-			(uuid "32fe5cf6-07e2-4998-a5e3-6ab61eb59f8f")
-		)
-		(pin "5"
-			(uuid "a52347f2-9118-4bd6-a0a5-7b1f42b2e8fb")
-		)
-		(pin "9"
-			(uuid "c76a0e1b-ab72-43b1-89b6-e319b5797f09")
-		)
-		(pin "12"
-			(uuid "b04092ec-7241-408a-b4e1-9e6710a41508")
-		)
-		(pin "21"
-			(uuid "b1e50ff1-dc46-491a-b8fe-fd60e2a657fb")
-		)
-		(pin "8"
-			(uuid "ed122242-8a22-4e90-a582-4f43b97199f5")
-		)
-		(pin "13"
-			(uuid "e8b0ecf1-0882-4cf3-9e7d-beeb4991e255")
-		)
-		(pin "2"
-			(uuid "3f6e915e-a56d-457c-aa1e-51cbbb0cc354")
-		)
-		(pin "15"
-			(uuid "eee40469-0adf-442b-815e-34083d2c68f8")
-		)
-		(pin "14"
-			(uuid "5e4ff78e-50b9-47b7-b731-2afc4695a558")
-		)
-		(pin "3"
-			(uuid "b2998b8e-df8e-4ddf-9b0c-2131cc249aba")
-		)
-		(pin "18"
-			(uuid "0300b898-2127-4efb-b65b-fc15a94fca89")
-		)
-		(pin "20"
-			(uuid "0bd49f74-0bc6-476b-a33d-ac985bf8cdc7")
-		)
-		(pin "16"
-			(uuid "def85b15-1fa2-458d-ba73-c033bd3f97b9")
-		)
-		(pin "7"
-			(uuid "a788f8a9-852a-451d-bba5-7271d3c50d81")
-		)
-		(pin "17"
-			(uuid "10bdc0bc-fe22-4147-84c1-ba6434962071")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG10")
 					(unit 1)
 				)
 			)
@@ -12176,7 +11509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 339.09 139.7 0)
 			(effects
 				(font
@@ -12241,7 +11574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 229.743 267.208 0)
 			(effects
 				(font
@@ -12309,7 +11642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 158.75 220.345 90)
 			(effects
 				(font
@@ -12317,7 +11650,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB Micro Type B connector"
 			(at 160.02 222.885 0)
 			(effects
 				(font
@@ -12424,7 +11757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 218.44 227.33 0)
 			(effects
 				(font
@@ -12440,131 +11773,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "#PWR57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 205.74 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56dda439-3357-4f12-992b-8286b68051f8")
-		(property "Reference" "CG5"
-			(at 215.265 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 215.265 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 205.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "bbbc74af-e652-4f8d-9e1f-3dbedfbdabbc")
-		)
-		(pin "6"
-			(uuid "c0455aff-ba1c-44a2-9ebd-816f35c83fe4")
-		)
-		(pin "1"
-			(uuid "84b8349f-da77-46c2-9e23-62af48f02642")
-		)
-		(pin "11"
-			(uuid "2a0c108a-ff00-4d0c-baad-33f2bdee66a0")
-		)
-		(pin "10"
-			(uuid "94123842-dbc3-4279-957a-62f0270807af")
-		)
-		(pin "4"
-			(uuid "6c3d5568-69f0-4c44-8511-b95b9805b706")
-		)
-		(pin "5"
-			(uuid "fa2e087d-00f8-48e2-925a-d34e3377ec5d")
-		)
-		(pin "9"
-			(uuid "84b3f656-d362-47ac-a967-d2e1277a8fb7")
-		)
-		(pin "12"
-			(uuid "2b499e6f-1a54-43f9-9de7-3193a9dd99d3")
-		)
-		(pin "21"
-			(uuid "7721bf9f-a477-4c92-a31a-6a5955bd2c28")
-		)
-		(pin "8"
-			(uuid "a9dd3a91-939a-48ee-8b60-c02917a4f71f")
-		)
-		(pin "13"
-			(uuid "021e7297-4569-406c-a1eb-3d5c0361673a")
-		)
-		(pin "2"
-			(uuid "0c42d860-ca8c-4820-b240-058a60540add")
-		)
-		(pin "15"
-			(uuid "00f32c49-bf0f-4e1c-8793-f015c03ef3da")
-		)
-		(pin "14"
-			(uuid "fce7c2ec-7d8d-4e2b-b21c-5f618c828a15")
-		)
-		(pin "3"
-			(uuid "7ce4dbdb-866b-475e-a26c-83e5efa4dfb7")
-		)
-		(pin "18"
-			(uuid "2d18b003-33cb-4715-8ff3-c8f746322def")
-		)
-		(pin "20"
-			(uuid "30f331b3-4510-4a49-90ca-50bcbc94a77a")
-		)
-		(pin "16"
-			(uuid "ddea7c4d-2b83-42b9-a119-b10406c4babe")
-		)
-		(pin "7"
-			(uuid "1b89d617-1d73-4d96-a9d7-76a1907ddad9")
-		)
-		(pin "17"
-			(uuid "6dd0f0bb-ddc6-4c98-a581-f5fc510e15dc")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG5")
 					(unit 1)
 				)
 			)
@@ -12613,7 +11821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 91.44 0)
 			(effects
 				(font
@@ -12690,7 +11898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 349.25 242.57 0)
 			(effects
 				(font
@@ -12758,7 +11966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 381 80.01 0)
 			(effects
 				(font
@@ -12789,131 +11997,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 237.49 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6f239b21-d6ed-43e9-ab1e-bb3e0614aab4")
-		(property "Reference" "CG3"
-			(at 247.015 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 247.015 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 237.49 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 237.49 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "11fc1400-3f79-417f-aaa5-1c7b2230a84f")
-		)
-		(pin "6"
-			(uuid "74ee86f2-81df-4045-99fd-9145fc1589d8")
-		)
-		(pin "1"
-			(uuid "72b33492-225e-4cdb-ae7b-aa343aa05ff2")
-		)
-		(pin "11"
-			(uuid "2a9b34f7-3140-4d6f-8d26-b1cf77465972")
-		)
-		(pin "10"
-			(uuid "518025c7-d6c0-43d1-a700-e455632c0c25")
-		)
-		(pin "4"
-			(uuid "11caad0c-fb30-4e72-abba-de3f179aee7a")
-		)
-		(pin "5"
-			(uuid "b6d6ae85-d045-46cf-8f98-80d56be027c6")
-		)
-		(pin "9"
-			(uuid "d19e6746-ea7c-4d88-b169-9113c21a8143")
-		)
-		(pin "12"
-			(uuid "17ec4e73-67ec-4599-b6a8-a627ed351902")
-		)
-		(pin "21"
-			(uuid "c18dc4d9-c10a-4b62-af93-a23266205fad")
-		)
-		(pin "8"
-			(uuid "e94bd55f-0b08-442b-a803-dc02df5f1b3a")
-		)
-		(pin "13"
-			(uuid "b591bddd-7824-4c45-b8de-91dab7b907d2")
-		)
-		(pin "2"
-			(uuid "40a1140b-d249-4e4b-bf9d-119d920b7390")
-		)
-		(pin "15"
-			(uuid "53dbd8ee-677b-4216-a241-e9e372cdd39b")
-		)
-		(pin "14"
-			(uuid "e9bb771b-5748-4a75-8ccc-ea9cc99642a5")
-		)
-		(pin "3"
-			(uuid "9e63c2c8-f4fb-4867-9665-8a73595f4b5a")
-		)
-		(pin "18"
-			(uuid "e1b043a3-d603-4a81-84a8-0cf78f04f017")
-		)
-		(pin "20"
-			(uuid "54a82fcc-022b-4f55-9155-894315a61efc")
-		)
-		(pin "16"
-			(uuid "ff71ce13-9d64-410b-b3bf-77a822473cd5")
-		)
-		(pin "7"
-			(uuid "3e5feb97-e386-4995-ae5b-1f3b24b5339b")
-		)
-		(pin "17"
-			(uuid "eefe06b9-eb0a-440a-bf43-40708b9c384d")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG3")
 					(unit 1)
 				)
 			)
@@ -12963,7 +12046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 229.743 259.588 0)
 			(effects
 				(font
@@ -13039,7 +12122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 99.06 0)
 			(effects
 				(font
@@ -13116,7 +12199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 307.34 69.215 0)
 			(effects
 				(font
@@ -13132,131 +12215,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "#PWR3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 236.22 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74a76bb8-6a6d-4e0e-bfd0-2d18cd9f286a")
-		(property "Reference" "CG6"
-			(at 245.745 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 245.745 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "cb8a16d3-79e4-4597-b25d-66e780875610")
-		)
-		(pin "6"
-			(uuid "2b9627f6-393e-4792-9b68-29fb972d0b35")
-		)
-		(pin "1"
-			(uuid "1b87541d-17dc-4a87-b680-0aa96f6d363f")
-		)
-		(pin "11"
-			(uuid "c93534c4-ca5f-4372-9768-bb6dd22ba956")
-		)
-		(pin "10"
-			(uuid "b8daf918-8a1b-4d2a-bcf0-af2421998ac7")
-		)
-		(pin "4"
-			(uuid "25a6d3ba-70a0-486b-94e7-93c08822cb17")
-		)
-		(pin "5"
-			(uuid "16d822b3-8a0c-4813-b9df-0aa22b450ffa")
-		)
-		(pin "9"
-			(uuid "75ab77d8-6bfd-4565-8f53-9560b91fc62d")
-		)
-		(pin "12"
-			(uuid "d87ad11c-2386-4009-9a74-3602f969c86a")
-		)
-		(pin "21"
-			(uuid "e1fa1eb3-9cad-428b-a2f8-a187f0236c46")
-		)
-		(pin "8"
-			(uuid "00f5d15d-7de0-486e-8397-fb5032ab7aaa")
-		)
-		(pin "13"
-			(uuid "d3528556-1735-4ada-991e-dcc5100c0c6e")
-		)
-		(pin "2"
-			(uuid "67bf18cf-f7af-48eb-a025-d2268d6eab50")
-		)
-		(pin "15"
-			(uuid "0811a639-a7fd-432d-ac93-9249172d93dd")
-		)
-		(pin "14"
-			(uuid "b79ca360-ec52-4c1c-a53f-3fc7ad5a94a8")
-		)
-		(pin "3"
-			(uuid "b4e7c4e3-45dd-4492-b0c2-430a7552b8c6")
-		)
-		(pin "18"
-			(uuid "acf44e27-b961-4bb0-b037-b924de3a45fa")
-		)
-		(pin "20"
-			(uuid "a48aa6b4-d150-467c-843f-663ec18cc030")
-		)
-		(pin "16"
-			(uuid "9293e57e-134f-46b1-a59c-22aa60c91bf4")
-		)
-		(pin "7"
-			(uuid "caba9ddf-9bf6-417c-9ae3-fe46a7f8394b")
-		)
-		(pin "17"
-			(uuid "375ff35d-6c15-4065-967a-bfb1b4b3ec7b")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG6")
 					(unit 1)
 				)
 			)
@@ -13309,7 +12267,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 138.43 74.93 0)
 			(effects
 				(font
@@ -13343,131 +12301,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "J72")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 173.99 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "78476575-7b27-4d83-ad18-3fb954d7314f")
-		(property "Reference" "CG7"
-			(at 183.515 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 183.515 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 173.99 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "78baa5c7-9125-4505-9636-fa14212f8403")
-		)
-		(pin "6"
-			(uuid "bf91dd98-6f05-4abe-beeb-77ff15035f70")
-		)
-		(pin "1"
-			(uuid "5114c6c9-a080-4941-9096-cc0caa04b48e")
-		)
-		(pin "11"
-			(uuid "349b2c5f-e00b-4595-b465-e6642efa1185")
-		)
-		(pin "10"
-			(uuid "f8f72c0e-8889-4ef1-b521-0e100e1d4aed")
-		)
-		(pin "4"
-			(uuid "a49af3e3-6743-446d-9d46-4a6c5a4f864d")
-		)
-		(pin "5"
-			(uuid "1c21c9ef-fae8-4259-8cc5-54a9a959a725")
-		)
-		(pin "9"
-			(uuid "7f8f2fd0-4e67-42a5-a942-db8b3582868f")
-		)
-		(pin "12"
-			(uuid "1d0ccf3c-9579-4603-afdb-9d7af773b806")
-		)
-		(pin "21"
-			(uuid "c381f637-7603-4db2-85f3-86bd9fe90467")
-		)
-		(pin "8"
-			(uuid "fb08e4ac-ce32-4c2c-9634-633597015f8f")
-		)
-		(pin "13"
-			(uuid "9d0d197e-38fa-435e-8926-f9ce2b18a3f0")
-		)
-		(pin "2"
-			(uuid "5ee80991-3d63-4b8a-a27c-dee3f6e433c9")
-		)
-		(pin "15"
-			(uuid "8f323332-86bc-40b9-9034-81b5c9bec13e")
-		)
-		(pin "14"
-			(uuid "e8d639ef-11c7-4b05-ae11-ddcf4c20bff4")
-		)
-		(pin "3"
-			(uuid "7e97f708-09f1-4816-9bb7-1e31b73a0fc0")
-		)
-		(pin "18"
-			(uuid "500361c2-f9b5-41c8-aa8b-8c4ab3a5f959")
-		)
-		(pin "20"
-			(uuid "4b5be5a8-3303-4a79-859c-edece0283f03")
-		)
-		(pin "16"
-			(uuid "63b1c709-b498-4f36-b488-56e9da4ecce6")
-		)
-		(pin "7"
-			(uuid "a623b8e7-77d8-4760-b5c0-6cb5444ddef4")
-		)
-		(pin "17"
-			(uuid "7c94e1d7-4f61-448c-8954-1e3ba7a767a1")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG7")
 					(unit 1)
 				)
 			)
@@ -13517,7 +12350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 381 247.65 0)
 			(effects
 				(font
@@ -13582,7 +12415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 331.47 139.7 0)
 			(effects
 				(font
@@ -13649,7 +12482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 93.98 0)
 			(effects
 				(font
@@ -13726,7 +12559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 182.118 271.653 0)
 			(effects
 				(font
@@ -13742,131 +12575,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "#PWR49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 205.74 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88291750-7e1d-43f3-a090-73eee43dce3e")
-		(property "Reference" "CG8"
-			(at 215.265 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 215.265 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 205.74 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "de010636-a896-4722-92f0-0578b3d5e391")
-		)
-		(pin "6"
-			(uuid "375f5d60-2dc6-43ec-af57-fde1f58837bf")
-		)
-		(pin "1"
-			(uuid "7856f2ae-8851-4edb-94fd-ffc4821fbd4a")
-		)
-		(pin "11"
-			(uuid "f8333e37-0d1a-4dd0-bb37-c2c9ddc8e9ad")
-		)
-		(pin "10"
-			(uuid "b800a1db-14ec-4858-8cc8-cd7846d42b2d")
-		)
-		(pin "4"
-			(uuid "6a1fadda-5e9e-4566-9bb0-ea104a39988f")
-		)
-		(pin "5"
-			(uuid "1a66a54c-a9c7-4cb3-bfdf-d2118bafcb03")
-		)
-		(pin "9"
-			(uuid "111442b8-5856-469d-aa6b-6faa0d29b6eb")
-		)
-		(pin "12"
-			(uuid "a89bd130-6401-4d21-8d45-ffb45334f2c8")
-		)
-		(pin "21"
-			(uuid "caa90e19-0dc0-4660-aca0-91e375ed0bed")
-		)
-		(pin "8"
-			(uuid "2dfe73c8-65ae-4fb6-8347-2596cb508342")
-		)
-		(pin "13"
-			(uuid "d32d11ba-1129-4284-933b-e84124c00791")
-		)
-		(pin "2"
-			(uuid "5235b6fc-038f-412c-969d-c2f4bfe64dd5")
-		)
-		(pin "15"
-			(uuid "d07aea50-a0da-4755-acdb-d1d6e91b5ff4")
-		)
-		(pin "14"
-			(uuid "05589d71-b26a-45c0-81c2-c32135b8cf68")
-		)
-		(pin "3"
-			(uuid "594439af-ecfc-4d5e-a64d-74f8e749a56c")
-		)
-		(pin "18"
-			(uuid "3f536e0e-1eb2-48d1-a6ac-bbd31e89a66d")
-		)
-		(pin "20"
-			(uuid "3906062d-e7a7-4665-8df0-2db8069ee8ad")
-		)
-		(pin "16"
-			(uuid "5cd8fcd1-d1fc-43da-83d4-0c3a6e0c25ba")
-		)
-		(pin "7"
-			(uuid "4beffd90-f825-489e-af0d-bf4913e9d931")
-		)
-		(pin "17"
-			(uuid "f44da98e-ab5b-4480-8fa8-62e497a42e47")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG8")
 					(unit 1)
 				)
 			)
@@ -13917,7 +12625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 299.72 66.675 0)
 			(effects
 				(font
@@ -14014,7 +12722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 194.183 258.318 0)
 			(effects
 				(font
@@ -14109,7 +12817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 338.455 120.65 0)
 			(effects
 				(font
@@ -14175,7 +12883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 167.513 266.573 0)
 			(effects
 				(font
@@ -14271,7 +12979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 313.69 151.13 0)
 			(effects
 				(font
@@ -14338,7 +13046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 128.905 48.26 0)
 			(effects
 				(font
@@ -14393,7 +13101,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "heep_footprints:TI-VQFN-HR-12"
+		(property "Footprint" "SOTFL50P160X60-8N"
 			(at 266.7 219.71 0)
 			(effects
 				(font
@@ -14413,7 +13121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TPS212x 2.8-V to 22-V Priority Power MUX with Seamless Switchover"
+		(property "Description" "d"
 			(at 250.19 217.17 0)
 			(effects
 				(font
@@ -14551,7 +13259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 208.915 241.935 0)
 			(effects
 				(font
@@ -14617,7 +13325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 384.81 212.09 0)
 			(effects
 				(font
@@ -14715,7 +13423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 381 101.6 0)
 			(effects
 				(font
@@ -14804,7 +13512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 163.83 208.915 0)
 			(effects
 				(font
@@ -14868,7 +13576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 111.76 0)
 			(effects
 				(font
@@ -14945,7 +13653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 167.513 271.653 0)
 			(effects
 				(font
@@ -15010,7 +13718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 218.44 215.9 0)
 			(effects
 				(font
@@ -15075,7 +13783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 191.77 225.425 0)
 			(effects
 				(font
@@ -15139,7 +13847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DC Barrel Jack with a mounting pin"
 			(at 199.39 238.76 0)
 			(effects
 				(font
@@ -15220,7 +13928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 215.773 260.858 0)
 			(effects
 				(font
@@ -15315,7 +14023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 229.743 271.653 0)
 			(effects
 				(font
@@ -15379,7 +14087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 109.22 0)
 			(effects
 				(font
@@ -15459,7 +14167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 381 127 0)
 			(effects
 				(font
@@ -15549,7 +14257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 214.63 241.3 0)
 			(effects
 				(font
@@ -15613,7 +14321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 106.68 0)
 			(effects
 				(font
@@ -15692,7 +14400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 375.92 106.68 0)
 			(effects
 				(font
@@ -15757,7 +14465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 133.35 82.55 0)
 			(effects
 				(font
@@ -15825,7 +14533,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 381 50.8 0)
 			(effects
 				(font
@@ -15913,7 +14621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 104.14 0)
 			(effects
 				(font
@@ -15989,7 +14697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 96.52 0)
 			(effects
 				(font
@@ -16066,7 +14774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Switch, single pole double throw"
 			(at 329.565 118.11 0)
 			(effects
 				(font
@@ -16088,131 +14796,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 175.26 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d68d606e-1f03-4650-8518-80a57b8cd3db")
-		(property "Reference" "CG1"
-			(at 184.785 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 184.785 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "cf2e4ae9-6d37-4df6-b46c-3923bbc73649")
-		)
-		(pin "6"
-			(uuid "b471b44f-e246-4d5d-81ff-cdb1f341f1d7")
-		)
-		(pin "1"
-			(uuid "f43abce5-7a10-4ce1-a9ec-81187f284a9c")
-		)
-		(pin "11"
-			(uuid "e37ce969-e5e2-4590-8ce0-c6ba1e3a44e2")
-		)
-		(pin "10"
-			(uuid "bef8b156-5ada-46ec-9796-1797b973a122")
-		)
-		(pin "4"
-			(uuid "caa8cf99-f7c9-4228-a083-69298184fc0e")
-		)
-		(pin "5"
-			(uuid "fc373ebe-7f0f-4df1-bf87-7f32ed189437")
-		)
-		(pin "9"
-			(uuid "9c18de05-7af1-4f38-98f1-48830768d7c4")
-		)
-		(pin "12"
-			(uuid "f8e09745-5b7f-4359-b97c-7d625715d70e")
-		)
-		(pin "21"
-			(uuid "b034c589-c5fb-4642-be81-95d74cc02fcd")
-		)
-		(pin "8"
-			(uuid "667c8f27-8321-44ca-bfd4-5a33cd00addd")
-		)
-		(pin "13"
-			(uuid "883e7e74-1cf7-4c37-905b-db141c6630c9")
-		)
-		(pin "2"
-			(uuid "276aa63b-8c01-4dec-abdf-6087ea6af021")
-		)
-		(pin "15"
-			(uuid "09ffee02-3d10-4eba-91a4-0cacd0df0212")
-		)
-		(pin "14"
-			(uuid "4ef19d23-433c-41a8-96ef-48270dfb482e")
-		)
-		(pin "3"
-			(uuid "79409124-3fed-45a2-9dc5-2e094701a82b")
-		)
-		(pin "18"
-			(uuid "93f5fc0d-8db9-466b-9b8b-a5801d5ca281")
-		)
-		(pin "20"
-			(uuid "61dcc51a-9b28-432b-b6e9-e856be828790")
-		)
-		(pin "16"
-			(uuid "05334458-c971-495a-b03e-89fcd91ed684")
-		)
-		(pin "7"
-			(uuid "97b8cc94-3fd0-47bf-8903-653e94195d5c")
-		)
-		(pin "17"
-			(uuid "75338374-6b4f-4860-8ea8-50872289efdf")
-		)
-		(instances
-			(project ""
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG1")
 					(unit 1)
 				)
 			)
@@ -16263,7 +14846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 259.715 223.52 0)
 			(effects
 				(font
@@ -16358,7 +14941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 306.07 151.13 0)
 			(effects
 				(font
@@ -16425,7 +15008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 208.915 227.965 0)
 			(effects
 				(font
@@ -16520,7 +15103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 365.76 111.76 0)
 			(effects
 				(font
@@ -16584,7 +15167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 259.715 219.71 0)
 			(effects
 				(font
@@ -16679,7 +15262,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Switch, single pole double throw"
 			(at 328.295 97.155 0)
 			(effects
 				(font
@@ -16751,7 +15334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "500mA Low-Dropout Linear Regulator, Adjustable Output, SOT-23-5"
 			(at 182.118 258.318 0)
 			(effects
 				(font
@@ -16788,131 +15371,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 205.74 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfbf4222-1798-4d46-ace7-5ae25784e520")
-		(property "Reference" "CG2"
-			(at 215.265 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 215.265 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "a001a4d4-d831-48e4-b0ca-641c5222c34d")
-		)
-		(pin "6"
-			(uuid "f1ac9523-95f3-4195-a4cb-5447ab2612c9")
-		)
-		(pin "1"
-			(uuid "d6ed14c8-3e8a-4423-bfdd-ec7d0988236c")
-		)
-		(pin "11"
-			(uuid "cd589423-4982-4273-81f9-f558504f2f5b")
-		)
-		(pin "10"
-			(uuid "8ad130c1-454a-4fed-a2b2-ea66d7767315")
-		)
-		(pin "4"
-			(uuid "072933a7-a334-4eeb-9656-4c6fde2131ce")
-		)
-		(pin "5"
-			(uuid "cd047337-c243-42b7-b1a9-80628def6b69")
-		)
-		(pin "9"
-			(uuid "2116b49a-2cc9-4f57-98ff-08fe93d6ceeb")
-		)
-		(pin "12"
-			(uuid "8b3ac74f-e30f-4f9c-998a-9b4ddfa8a4b8")
-		)
-		(pin "21"
-			(uuid "17eb4e28-b84e-4de8-bba5-ad500b6c5c04")
-		)
-		(pin "8"
-			(uuid "c78d9b5d-ad1d-4bb4-92f3-c01587abc3c8")
-		)
-		(pin "13"
-			(uuid "fe1e88fb-90f2-400e-bf70-fd788d279a28")
-		)
-		(pin "2"
-			(uuid "7b85faba-4032-4d89-a7a9-96da5fdadb5a")
-		)
-		(pin "15"
-			(uuid "45889d88-372a-445f-8504-05a4713ba85c")
-		)
-		(pin "14"
-			(uuid "7521c48c-1e64-4c4a-a8eb-15834d375cad")
-		)
-		(pin "3"
-			(uuid "62576d92-61bd-4ede-b636-6c407024b6cb")
-		)
-		(pin "18"
-			(uuid "bfe0216d-ab1e-4c61-9e55-61cca8a4d4db")
-		)
-		(pin "20"
-			(uuid "4a7658c3-254f-49bb-baa6-df0c317e1e9e")
-		)
-		(pin "16"
-			(uuid "6fa03152-23b7-4650-9106-2c7a77a898a6")
-		)
-		(pin "7"
-			(uuid "f706d2e7-ccdd-490b-88c0-8bdd11c605b2")
-		)
-		(pin "17"
-			(uuid "7a0d6883-871a-49db-8989-36abc267a27e")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG2")
 					(unit 1)
 				)
 			)
@@ -16962,7 +15420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.183 271.653 0)
 			(effects
 				(font
@@ -16978,131 +15436,6 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "#PWR52")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 175.26 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e23b732c-1536-4ff9-9ba0-85a6f94b3bd4")
-		(property "Reference" "CG4"
-			(at 184.785 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 184.785 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 175.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 175.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "f86d508b-5136-4613-8082-704b418b454c")
-		)
-		(pin "6"
-			(uuid "e8a2f0c3-4840-4cf0-b2e3-d715a7c9532d")
-		)
-		(pin "1"
-			(uuid "f35fe7ac-da25-44c0-9126-e6c818c9a871")
-		)
-		(pin "11"
-			(uuid "f75c8897-9401-4d41-86a0-75ce0b75309c")
-		)
-		(pin "10"
-			(uuid "29549a02-93f8-4f3d-8c4d-d63bebeb9914")
-		)
-		(pin "4"
-			(uuid "88a899fc-2172-4365-888c-32f8cc3d8cd6")
-		)
-		(pin "5"
-			(uuid "54270ff4-f943-4fae-8664-a494421b9272")
-		)
-		(pin "9"
-			(uuid "ca98e978-5e7a-45dc-8f53-eaefad8724ea")
-		)
-		(pin "12"
-			(uuid "66ac18df-89b5-4b40-831c-6b035c0a08e2")
-		)
-		(pin "21"
-			(uuid "ae60ea8e-5b58-46dd-9cd0-11d82d06396f")
-		)
-		(pin "8"
-			(uuid "633b51d8-091c-4606-b40e-cd0e388a4f33")
-		)
-		(pin "13"
-			(uuid "29ed19a3-2d2e-4136-ab0e-1b36b06b165b")
-		)
-		(pin "2"
-			(uuid "c1710e69-d8ab-44ff-86f0-74e594f5fd62")
-		)
-		(pin "15"
-			(uuid "21edca37-87cd-40b6-bdb8-7ff1bc274405")
-		)
-		(pin "14"
-			(uuid "2f266b5a-e349-4130-bcdb-8e3907c901c5")
-		)
-		(pin "3"
-			(uuid "a639c5b2-3c1f-4e07-bc68-3aab50223c4a")
-		)
-		(pin "18"
-			(uuid "66f8fcba-c738-4750-a5e4-3587d34b33e4")
-		)
-		(pin "20"
-			(uuid "e8964aa0-a1ef-4720-8f24-a58f1c808d2a")
-		)
-		(pin "16"
-			(uuid "6e9467ad-02c2-4204-931c-ec6631c202bc")
-		)
-		(pin "7"
-			(uuid "a66c07b3-2b69-4099-871f-2eed8855cff6")
-		)
-		(pin "17"
-			(uuid "7a42d0ef-c99c-4b98-a02b-80ec527c3e7c")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG4")
 					(unit 1)
 				)
 			)
@@ -17152,7 +15485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 387.35 213.233 0)
 			(effects
 				(font
@@ -17219,7 +15552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 375.92 132.08 0)
 			(effects
 				(font
@@ -17286,7 +15619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 196.85 223.52 0)
 			(effects
 				(font
@@ -17381,7 +15714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 336.55 99.695 0)
 			(effects
 				(font
@@ -17446,7 +15779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 365.76 60.96 0)
 			(effects
 				(font
@@ -17514,7 +15847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 314.96 60.325 0)
 			(effects
 				(font
@@ -17596,7 +15929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.808 101.6 0)
 			(effects
 				(font
@@ -17674,7 +16007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 257.81 209.55 0)
 			(effects
 				(font
@@ -17726,131 +16059,6 @@
 		)
 	)
 	(symbol
-		(lib_id "cheeps-tb:chewing-gum")
-		(at 236.22 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fbed53d2-48b7-4ee5-9371-4f81f19fa0f4")
-		(property "Reference" "CG9"
-			(at 245.745 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 245.745 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "heep_footprints:chewing-gum"
-			(at 236.22 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 236.22 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "ad7e4d55-fd0c-471f-ac04-4e9562774d07")
-		)
-		(pin "6"
-			(uuid "6a3f8585-40c9-48f9-8792-1160c3eca15b")
-		)
-		(pin "1"
-			(uuid "6d1f59b5-9d11-4cd9-b767-81db858f06f0")
-		)
-		(pin "11"
-			(uuid "d079123e-032d-4a00-b13f-ad6c1c0e00e3")
-		)
-		(pin "10"
-			(uuid "80a8096f-9f62-466f-a56a-9738328f71ef")
-		)
-		(pin "4"
-			(uuid "22bc255b-be66-4bb2-b4e6-56b98009340a")
-		)
-		(pin "5"
-			(uuid "df139c15-2001-429a-9165-3385109073bf")
-		)
-		(pin "9"
-			(uuid "f5b4b188-504a-4f91-9fa4-ea311c934d9d")
-		)
-		(pin "12"
-			(uuid "c2cf79c1-0f74-458c-b92f-45ee28cb043a")
-		)
-		(pin "21"
-			(uuid "094104c6-a322-4be2-8e9a-1da2876f33ab")
-		)
-		(pin "8"
-			(uuid "2c080207-dfb0-4d01-bfa5-275f607fb75a")
-		)
-		(pin "13"
-			(uuid "30146265-a939-498d-8cd9-51f231abfede")
-		)
-		(pin "2"
-			(uuid "11857a6f-f29d-47e3-8438-9b35d8a78ae3")
-		)
-		(pin "15"
-			(uuid "80efedbc-5051-4075-a2b1-4a3bd6e229d4")
-		)
-		(pin "14"
-			(uuid "b1bb1091-92b9-42d8-9628-81d205d25d45")
-		)
-		(pin "3"
-			(uuid "4fbdd721-344b-4dc2-9222-e60a5dbaf2da")
-		)
-		(pin "18"
-			(uuid "01ae7e6e-f49a-4d00-b347-37438bbeedc5")
-		)
-		(pin "20"
-			(uuid "21825608-5429-46ba-bc99-25f00239efae")
-		)
-		(pin "16"
-			(uuid "7c0ee92c-ddf6-4fa4-a671-de12ae2e091f")
-		)
-		(pin "7"
-			(uuid "b5d5e51a-cb4c-400d-b085-2643c05ff9b0")
-		)
-		(pin "17"
-			(uuid "ae3eb3e5-01f7-49d8-b408-c9bd0ce641b4")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
-					(reference "CG9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 266.7 209.55 0)
 		(unit 1)
@@ -17896,7 +16104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 266.7 209.55 0)
 			(effects
 				(font
@@ -18139,7 +16347,7 @@
 			)
 			(uuid "1573235a-f3ee-4d8c-98b7-c16ccfdbf25e")
 		)
-		(pin "FLASH_SS_B" output
+		(pin "FLASH_SS_A" output
 			(at 93.98 215.9 0)
 			(effects
 				(font
@@ -18159,7 +16367,7 @@
 			)
 			(uuid "7bb2e51e-bf5c-468c-9532-283d1556b194")
 		)
-		(pin "HEEP_CLOCK_SEL" output
+		(pin "HEEP_BLOCK_SEL" output
 			(at 93.98 227.33 0)
 			(effects
 				(font
@@ -18457,7 +16665,7 @@
 			)
 			(uuid "735b3a53-f94b-4c05-b057-9df9a1566fa2")
 		)
-		(pin "HEEP_CLOCK" output
+		(pin "HEEP_BLOCK" output
 			(at 106.68 117.475 0)
 			(effects
 				(font
@@ -18467,7 +16675,7 @@
 			)
 			(uuid "c58e83a7-fe40-431a-af20-2cea5c99458c")
 		)
-		(pin "spi_flash_cs" input
+		(pin "spi_flash_Bs" input
 			(at 106.68 69.85 0)
 			(effects
 				(font
@@ -18477,7 +16685,7 @@
 			)
 			(uuid "b93f6a64-3968-4780-bc65-1b3dfb6679ec")
 		)
-		(pin "HEEP_CLOCK_SEL" input
+		(pin "HEEP_BLOCK_SEL" input
 			(at 49.53 117.475 180)
 			(effects
 				(font
@@ -18557,7 +16765,7 @@
 			)
 			(uuid "95b022fb-37c8-4395-ab6f-08986e0ce463")
 		)
-		(pin "FLASH_CS_B_FTDI" input
+		(pin "FLASH_BS_A_FTDI" input
 			(at 49.53 74.93 180)
 			(effects
 				(font
@@ -18971,6 +17179,113 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.18 22.86)
+		(size 30.48 38.1)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9591d298-ea0e-4277-81c7-c5359ae1b242")
+		(property "Sheetname" "chewing-gums"
+			(at 170.18 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "chewing-gums.kicad_sch"
+			(at 170.688 18.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "5V" input
+			(at 170.18 31.75 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c303d5bd-c4f7-44d0-a12e-a9f8bd3bd799")
+		)
+		(pin "3V3" input
+			(at 170.18 35.56 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "42519974-2e31-444a-8010-1ed9ccfc7a18")
+		)
+		(pin "A3V3" input
+			(at 200.66 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "635fc1f8-a5a2-4d45-b4f2-69a9aeb0229a")
+		)
+		(pin "SCL" input
+			(at 170.18 46.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "35b1fac5-799e-48d1-acf3-03729d4689d8")
+		)
+		(pin "SDA" input
+			(at 170.18 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cc72df1b-f76b-4722-838c-ab56fc3e133f")
+		)
+		(pin "GND" input
+			(at 185.42 60.96 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8ccb0c4c-8046-41ca-9ec2-fecef39efe25")
+		)
+		(pin "REF" input
+			(at 200.66 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9a1f069b-c22e-44b1-8f7c-bc99bfd66e56")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(page "4")
 				)
 			)
 		)

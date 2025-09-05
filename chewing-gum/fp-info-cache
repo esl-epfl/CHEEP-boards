@@ -1,4 +1,4 @@
-24260312383623377
+24262069627945080
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97573,12 +97573,19 @@ TI-VQFN-HR-12
 12
 12
 heep_footprints
+adc-dac
+
+
+0
+40
+40
+heep_footprints
 chewing-gum
 
 
 0
-0
-0
+21
+21
 heep_footprints
 heep_cover
 

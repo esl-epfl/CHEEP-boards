@@ -447,8 +447,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "heep_footprints"
+    ],
+    "pinned_symbol_libs": [
+      "cheeps-tb"
+    ]
   },
   "meta": {
     "filename": "adc-dac.kicad_pro",

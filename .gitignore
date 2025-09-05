@@ -1,3 +1,4 @@
 pcb/core-v-mini-mcu-spiboot-fpga-backups
 .DS_Store
 *backups*
+*.lck
