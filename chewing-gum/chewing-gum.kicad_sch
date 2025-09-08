@@ -2121,14 +2121,6 @@
 		(uuid "4917d142-0cf8-424e-a946-ccd27ec531e6")
 	)
 	(no_connect
-		(at 149.86 142.24)
-		(uuid "68fe4769-9432-4013-8324-dd6994ee30fd")
-	)
-	(no_connect
-		(at 149.86 139.7)
-		(uuid "8d78797e-aca0-4dca-a14f-5ab236150bcd")
-	)
-	(no_connect
 		(at 116.84 144.78)
 		(uuid "b2cef9ce-48c5-4f03-b5e6-5a2b76867ddd")
 	)
@@ -2794,6 +2786,16 @@
 		)
 		(uuid "3a582977-e706-4b7d-961f-a2c1c3118378")
 	)
+	(label "5V"
+		(at 149.86 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "50d38c97-6dfb-4b24-955c-cbec66a784a8")
+	)
 	(label "V_diff_ampl_out"
 		(at 68.58 170.18 0)
 		(effects
@@ -2804,7 +2806,7 @@
 		)
 		(uuid "5b549576-d90c-4f09-80be-5a1dd5a2a822")
 	)
-	(label "Vpm"
+	(label "5V"
 		(at 33.02 91.44 0)
 		(effects
 			(font
@@ -2983,6 +2985,16 @@
 			(justify left bottom)
 		)
 		(uuid "fc37c202-631f-49da-8007-8f4db3503302")
+	)
+	(label "5V"
+		(at 149.86 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ff652216-ff42-4c28-a93c-592953ae1879")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x01")

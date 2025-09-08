@@ -7263,7 +7263,7 @@
 		)
 		(uuid "058d90ae-0afc-4975-8998-21d8cba2b151")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 368.3 50.165 0)
 		(effects
 			(font
@@ -7363,7 +7363,7 @@
 		)
 		(uuid "2addfe32-424b-4fb9-92f8-712fb2219145")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 304.8 50.165 0)
 		(effects
 			(font
@@ -7383,7 +7383,7 @@
 		)
 		(uuid "3701d359-24e0-40fa-badf-f0780bdfaa5f")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 352.425 178.435 0)
 		(effects
 			(font
@@ -7423,7 +7423,7 @@
 		)
 		(uuid "48c6bb41-377a-4344-b5fa-80f963c9e665")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 71.12 38.735 0)
 		(effects
 			(font
@@ -7483,7 +7483,7 @@
 		)
 		(uuid "66400f0e-7791-4479-b837-9ccd306b9b8e")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 103.505 136.525 90)
 		(effects
 			(font
@@ -7663,7 +7663,7 @@
 		)
 		(uuid "a6ab4998-311b-4762-b010-09cca30875b6")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 63.5 221.615 0)
 		(effects
 			(font
@@ -7673,7 +7673,7 @@
 		)
 		(uuid "ad1ec3d7-1bd1-45df-b5cb-67d8637684d3")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 328.422 214.122 0)
 		(effects
 			(font
@@ -7743,7 +7743,7 @@
 		)
 		(uuid "d8a1b3cb-aad2-4c65-9807-b126a75083ab")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 189.23 137.16 90)
 		(effects
 			(font
@@ -7763,7 +7763,7 @@
 		)
 		(uuid "dffa2fcf-fa77-4885-97bd-aa33dda3b827")
 	)
-	(label "V_IO"
+	(label "VDD_IO"
 		(at 136.652 220.98 0)
 		(effects
 			(font
@@ -8545,7 +8545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 128.27 160.655 0)
 			(effects
 				(font
@@ -9769,7 +9769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 143.51 33.02 0)
 			(effects
 				(font
@@ -10291,7 +10291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 277.495 103.505 0)
 			(effects
 				(font
@@ -10926,7 +10926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 88.265 121.285 0)
 			(effects
 				(font
@@ -11569,7 +11569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 328.295 124.46 90)
 			(effects
 				(font
@@ -13374,7 +13374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 67.945 121.285 0)
 			(effects
 				(font
@@ -14321,7 +14321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 339.09 116.84 90)
 			(effects
 				(font
@@ -14388,7 +14388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 101.727 199.39 0)
 			(effects
 				(font
@@ -14550,7 +14550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 310.515 91.44 0)
 			(effects
 				(font
@@ -14616,7 +14616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 292.1 21.59 0)
 			(effects
 				(font
@@ -14910,7 +14910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 28.575 200.025 0)
 			(effects
 				(font
@@ -16593,7 +16593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 355.6 24.13 0)
 			(effects
 				(font
@@ -17173,7 +17173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 173.99 120.65 0)
 			(effects
 				(font
@@ -17598,7 +17598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V3"
 			(at 349.885 168.275 0)
 			(effects
 				(font
