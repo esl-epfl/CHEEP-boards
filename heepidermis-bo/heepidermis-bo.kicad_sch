@@ -7170,6 +7170,10 @@
 			)
 		)
 	)
+	(no_connect
+		(at 105.41 80.01)
+		(uuid "0e18be47-0d42-42e4-8abf-9d49fa03ea46")
+	)
 	(wire
 		(pts
 			(xy 148.59 57.15) (xy 148.59 63.5)
@@ -7810,6 +7814,16 @@
 		)
 		(uuid "f81577bb-cfe3-4eef-acef-083ee51b4695")
 	)
+	(text "DCORE_VDD was not connected on the chip"
+		(exclude_from_sim no)
+		(at 82.804 79.756 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1023528f-a829-483f-87d2-79cd60fceb7e")
+	)
 	(label "SPI_FLASH_SD_0"
 		(at 125.73 130.81 270)
 		(effects
@@ -7829,16 +7843,6 @@
 			(justify right bottom)
 		)
 		(uuid "0c906eff-efa5-4082-9dd6-b7e19574faec")
-	)
-	(label "DCORE_VDD"
-		(at 105.41 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0f3426ad-6dfc-4052-8f81-be67a84d7e21")
 	)
 	(label "JTAG_TMS"
 		(at 140.97 57.15 90)

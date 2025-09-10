@@ -187,13 +187,14 @@
 	(net 54 "unconnected-(HEEPidermis1-Pad67)")
 	(net 55 "unconnected-(HEEPidermis1-Pad66)")
 	(net 56 "unconnected-(HEEPidermis1-Pad65)")
+	(net 57 "unconnected-(HEEPidermis1-Pad3)")
 	(footprint "Connector_PinHeader_1.27mm:PinHeader_2x16_P1.27mm_Vertical"
 		(layer "F.Cu")
 		(uuid "048e62e1-884f-4d38-8960-e3aa78322179")
 		(at 103.8675 74.18 90)
 		(descr "Through hole straight pin header, 2x16, 1.27mm pitch, double rows")
 		(tags "Through hole pin header THT 2x16 1.27mm double row")
-		(property "Reference" "REF**"
+		(property "Reference" "J2"
 			(at 0.635 -1.695 90)
 			(layer "F.SilkS")
 			(uuid "df3e4ad3-ffbf-4bcb-8a49-e4698c07c794")
@@ -1441,7 +1442,7 @@
 		(at 150.8525 74.18 90)
 		(descr "Through hole straight pin header, 2x16, 1.27mm pitch, double rows")
 		(tags "Through hole pin header THT 2x16 1.27mm double row")
-		(property "Reference" "REF**"
+		(property "Reference" "RJ4"
 			(at 0.635 -1.695 90)
 			(layer "F.SilkS")
 			(uuid "5020dca4-61f0-4249-90e2-1d3fa3ed6b3f")
@@ -3682,9 +3683,9 @@
 				"In30.Cu"
 			)
 			(remove_unused_layers no)
-			(net 31 "/DCORE_VDD")
+			(net 57 "unconnected-(HEEPidermis1-Pad3)")
 			(pinfunction "3")
-			(pintype "unspecified")
+			(pintype "unspecified+no_connect")
 			(clearance 0.05)
 			(uuid "8acb25eb-dc71-4e01-89a8-3068cd24a045")
 		)
@@ -5475,7 +5476,7 @@
 		(at 127.36 74.18 90)
 		(descr "Through hole straight pin header, 2x16, 1.27mm pitch, double rows")
 		(tags "Through hole pin header THT 2x16 1.27mm double row")
-		(property "Reference" "REF**"
+		(property "Reference" "J3"
 			(at 0.635 -1.695 90)
 			(layer "F.SilkS")
 			(uuid "923254da-27a5-473c-9be2-4d1ce2ddcd37")
@@ -8835,28 +8836,12 @@
 		(uuid "3c45c63b-96d8-4d7f-877f-c251b872d091")
 	)
 	(segment
-		(start 126.1515 81.213)
-		(end 126.1385 81.2)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 31)
-		(uuid "72b7dd12-10f2-4ea5-95cf-f27909c466e0")
-	)
-	(segment
 		(start 139 85.5385)
 		(end 143.6085 80.93)
 		(width 0.5)
 		(layer "F.Cu")
 		(net 31)
 		(uuid "92eb0c93-cc24-46d2-adda-cd851af0edb4")
-	)
-	(segment
-		(start 126.1515 96.770001)
-		(end 126.1515 81.213)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 31)
-		(uuid "9478788b-2e4c-41a4-81a9-9805859ef820")
 	)
 	(segment
 		(start 132.5 92.547999)
