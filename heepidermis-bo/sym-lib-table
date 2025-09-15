@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "cheeps-tb")(type "KiCad")(uri "/home/juan/Desktop/ESL/t_cheep_boards/cheeps-tb.kicad_sym")(options "")(descr ""))
+  (lib (name "HTB-lib")(type "KiCad")(uri "/home/juan/Desktop/ESL/t_cheep_boards/main-board/HTB-lib.kicad_sym")(options "")(descr ""))
+)

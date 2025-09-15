@@ -1619,7 +1619,7 @@
 		)
 		(uuid "f6f3c982-6ca7-4eca-9f93-3b711a19f2b6")
 	)
-	(label "CG_I2C_SDA_3"
+	(label "CG_I2C_SDA_1"
 		(at 136.525 92.71 0)
 		(effects
 			(font
@@ -1639,7 +1639,7 @@
 		)
 		(uuid "22240c75-0efc-466d-bdc0-164d621f8cee")
 	)
-	(label "CG_I2C_SDA_10"
+	(label "CG_I2C_SDA_12"
 		(at 210.82 99.06 0)
 		(effects
 			(font
@@ -1649,7 +1649,7 @@
 		)
 		(uuid "24e7b811-b2d4-4c14-a8b3-a6a996fd0bb1")
 	)
-	(label "CG_I2C_SCL_10"
+	(label "CG_I2C_SCL_12"
 		(at 211.455 95.25 0)
 		(effects
 			(font
@@ -1739,7 +1739,7 @@
 		)
 		(uuid "8237da91-30e2-46a3-8c43-2fb546305127")
 	)
-	(label "CG_I2C_SDA_12"
+	(label "CG_I2C_SDA_10"
 		(at 211.455 114.3 0)
 		(effects
 			(font
@@ -1759,7 +1759,7 @@
 		)
 		(uuid "8c51703a-2de4-4584-b7e5-e074589f4f19")
 	)
-	(label "CG_I2C_SDA_1"
+	(label "CG_I2C_SDA_3"
 		(at 135.89 77.47 0)
 		(effects
 			(font
@@ -1799,7 +1799,7 @@
 		)
 		(uuid "adbf19dc-8eaa-4e75-a049-faad73f1d62b")
 	)
-	(label "CG_I2C_SCL_12"
+	(label "CG_I2C_SCL_10"
 		(at 211.455 110.49 0)
 		(effects
 			(font
@@ -1819,7 +1819,7 @@
 		)
 		(uuid "c56f81c3-878a-4a1c-8249-db2a0e9abdf6")
 	)
-	(label "CG_I2C_SCL_1"
+	(label "CG_I2C_SCL_3"
 		(at 135.89 73.66 0)
 		(effects
 			(font
@@ -1829,7 +1829,7 @@
 		)
 		(uuid "e09feb58-7756-4b1b-96bc-ae9ca1765054")
 	)
-	(label "CG_I2C_SCL_3"
+	(label "CG_I2C_SCL_1"
 		(at 136.525 88.9 0)
 		(effects
 			(font

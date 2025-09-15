@@ -255,6 +255,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_2x??_*")
+		(sheetname "Root")
+		(sheetfile "heepidermis-bo.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.13 -0.76)
@@ -1503,6 +1506,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_2x??_*")
+		(sheetname "Root")
+		(sheetfile "heepidermis-bo.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.13 -0.76)
@@ -5537,6 +5543,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_2x??_*")
+		(sheetname "Root")
+		(sheetfile "heepidermis-bo.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.13 -0.76)
