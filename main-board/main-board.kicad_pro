@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.65,
-          "height": 1.0,
-          "width": 1.0
+          "height": 0.95,
+          "width": 0.95
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -475,7 +475,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "heep_footprints"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -729,6 +731,14 @@
     [
       "da0d7e8a-0f31-4bfa-8fa6-23178032012e",
       "CHEEP-CONNECTOR"
+    ],
+    [
+      "fd9da62b-9782-45f1-a1dc-4f8db8879f00",
+      "GPIO_playground"
+    ],
+    [
+      "e4443dec-5033-46d9-bedd-7aa9e73a67e1",
+      "I2C_expander"
     ]
   ],
   "text_variables": {}

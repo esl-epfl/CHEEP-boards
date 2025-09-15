@@ -1,4 +1,4 @@
-24262069899382069
+24265584987330611
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97524,6 +97524,13 @@ X2SON-8
 8
 8
 heep_footprints
+BIWIN_DTS04GE_SMD
+
+
+0
+6
+6
+heep_footprints
 EPFL
 
 
@@ -97572,6 +97579,13 @@ TI-VQFN-HR-12
 0
 12
 12
+heep_footprints
+VSSOP-10_3x3mm_P0.5mm_sch
+VSSOP, 10 Pin (http://www.ti.com/lit/ds/symlink/ads1115.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+VSSOP SO
+0
+10
+10
 heep_footprints
 adc-dac
 
