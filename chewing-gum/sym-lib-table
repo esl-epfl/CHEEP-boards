@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "heepocrates")(type "KiCad")(uri "/home/juan/Desktop/ESL/t_cheep_boards/htb/heep_symbol/heepocrates.kicad_sym")(options "")(descr ""))
-  (lib (name "cheeps-tb")(type "KiCad")(uri "/home/juan/Desktop/ESL/t_cheep_boards/cheeps-tb.kicad_sym")(options "")(descr ""))
-)
