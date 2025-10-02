@@ -2698,6 +2698,16 @@
 		)
 		(uuid "adee160e-4c3d-4d0f-9265-71898b1e7822")
 	)
+	(wire
+		(pts
+			(xy 154.94 172.72) (xy 158.75 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af53a8f9-4921-4146-b393-111b2f62a124")
+	)
 	(bus
 		(pts
 			(xy 69.215 115.57) (xy 70.485 115.57)
@@ -3078,6 +3088,16 @@
 		)
 		(uuid "014912fe-fcfd-4b01-aaec-f266578ff163")
 	)
+	(label "VDD_IO_main"
+		(at 154.94 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d6568a8-c769-4b77-b9b6-60e7dc6ef489")
+	)
 	(label "GPIO.LED_G_1"
 		(at 175.26 120.65 180)
 		(effects
@@ -3250,7 +3270,7 @@
 			)
 		)
 	)
-	(global_label "VDD_IO_main"
+	(global_label "VDDIO"
 		(shape input)
 		(at 158.75 172.72 0)
 		(fields_autoplaced yes)
@@ -3262,7 +3282,7 @@
 		)
 		(uuid "90e07a52-e1f4-49f2-bfaa-0b90c1c8732d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.8304 172.72 0)
+			(at 167.2991 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)

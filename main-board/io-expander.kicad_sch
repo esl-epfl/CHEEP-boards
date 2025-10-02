@@ -2259,6 +2259,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 95.25) (xy 118.11 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da729885-5b5c-4133-9720-91b3e44c6029")
+	)
+	(wire
+		(pts
 			(xy 90.17 45.72) (xy 97.79 45.72)
 		)
 		(stroke
@@ -2607,6 +2617,16 @@
 		)
 		(uuid "3aa1b89d-d71f-4a24-8862-a075eff86d85")
 	)
+	(label "VDD_IO_main"
+		(at 111.76 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3ce37e4a-1cad-4065-ada3-0e436255e1cd")
+	)
 	(label "GPIO_17"
 		(at 157.48 73.66 180)
 		(effects
@@ -2867,7 +2887,7 @@
 		)
 		(uuid "db981846-eda9-43e3-80d8-b7e62c78f514")
 	)
-	(global_label "VDD_IO_main"
+	(global_label "VDDIO"
 		(shape input)
 		(at 118.11 95.25 0)
 		(fields_autoplaced yes)
@@ -2879,7 +2899,7 @@
 		)
 		(uuid "04ea9591-c3b2-4495-8ed9-05062c89e4a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.1904 95.25 0)
+			(at 126.6591 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)

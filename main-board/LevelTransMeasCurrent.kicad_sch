@@ -3744,6 +3744,16 @@
 	)
 	(wire
 		(pts
+			(xy 337.82 217.17) (xy 334.01 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eb6ec3f-725e-4f7e-b053-7d6f67910d63")
+	)
+	(wire
+		(pts
 			(xy 315.595 137.16) (xy 315.595 139.065)
 		)
 		(stroke
@@ -5002,9 +5012,19 @@
 		)
 		(uuid "e36c1188-5f82-4181-ab3c-25d2e85de574")
 	)
+	(label "VDD_IO_main"
+		(at 334.01 217.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f90194ce-92f3-4e80-901d-4039a313a92d")
+	)
 	(global_label "SDA"
 		(shape input)
-		(at 337.058 224.282 0)
+		(at 337.82 223.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5014,7 +5034,7 @@
 		)
 		(uuid "17a4b440-7b71-44ba-8108-4f2f91c97ae9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 347.3774 224.282 0)
+			(at 348.1394 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5024,9 +5044,9 @@
 			)
 		)
 	)
-	(global_label "VDD_IO_main"
+	(global_label "VDDIO"
 		(shape input)
-		(at 337.185 217.805 0)
+		(at 337.82 217.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5036,7 +5056,7 @@
 		)
 		(uuid "4ad2278e-6bc5-4a8b-9b20-435a70985a4b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 360.9329 217.805 0)
+			(at 351.2822 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,7 +5068,7 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 336.804 230.632 0)
+		(at 337.82 229.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5058,7 +5078,7 @@
 		)
 		(uuid "67465946-7d03-4ee0-a747-c1b7f9bc3f10")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 347.0281 230.632 0)
+			(at 348.0441 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
