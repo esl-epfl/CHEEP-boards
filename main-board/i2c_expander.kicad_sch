@@ -1093,7 +1093,7 @@
 	)
 	(wire
 		(pts
-			(xy 127.635 123.19) (xy 136.525 123.19)
+			(xy 127.635 123.19) (xy 137.16 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1153,7 +1153,7 @@
 	)
 	(wire
 		(pts
-			(xy 127.635 119.38) (xy 136.525 119.38)
+			(xy 127.635 119.38) (xy 137.16 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1213,7 +1213,7 @@
 	)
 	(wire
 		(pts
-			(xy 127.635 127) (xy 136.525 127)
+			(xy 127.635 127) (xy 137.16 127)
 		)
 		(stroke
 			(width 0)
@@ -1433,7 +1433,7 @@
 	)
 	(wire
 		(pts
-			(xy 127.635 130.81) (xy 136.525 130.81)
+			(xy 127.635 130.81) (xy 137.16 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1983,7 +1983,7 @@
 	)
 	(hierarchical_label "SCL_LEFT"
 		(shape input)
-		(at 136.525 127 0)
+		(at 137.16 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1991,17 +1991,6 @@
 			(justify left)
 		)
 		(uuid "230c14b3-64b9-4370-8749-f4b4fd1a2ffc")
-	)
-	(hierarchical_label "ADCDAC_I2C_SCL_RIGHT"
-		(shape input)
-		(at 210.82 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "366d8027-700d-4dcd-b2f8-dac0f1041b10")
 	)
 	(hierarchical_label "CG_I2C_SCL_[1..6]"
 		(shape input)
@@ -2025,31 +2014,20 @@
 		)
 		(uuid "45073628-02bb-4a68-bb62-bdd65bbaa9a9")
 	)
-	(hierarchical_label "ADCDAC_I2C_SDA_RIGHT"
+	(hierarchical_label "SCL_CHEEP"
 		(shape input)
-		(at 210.82 121.92 0)
+		(at 137.16 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "5394b622-fdd4-4a01-8fba-155b10ecaac5")
-	)
-	(hierarchical_label "ADCDAC_I2C_SCL_LEFT"
-		(shape input)
-		(at 136.525 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7c669d5d-44f5-4719-b77f-6139e59079f9")
+		(uuid "5167d577-c0e2-4239-8789-e519b17d91ce")
 	)
 	(hierarchical_label "SDA_LEFT"
 		(shape input)
-		(at 136.525 130.81 0)
+		(at 137.16 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2080,16 +2058,16 @@
 		)
 		(uuid "cf63ebab-001a-47df-9316-c4a52873b3f6")
 	)
-	(hierarchical_label "ADCDAC_I2C_SDA_LEFT"
+	(hierarchical_label "SDA_CHEEP"
 		(shape input)
-		(at 136.525 123.19 0)
+		(at 137.16 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "df58a894-0072-4a7b-8835-67a245ac5cd3")
+		(uuid "d9e89592-5bfb-4190-95b8-556289fcc46c")
 	)
 	(symbol
 		(lib_id "power:GND")

@@ -734,148 +734,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x01"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_02x01"
-				(at 1.27 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_02x01_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 3.81 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_02x02_Odd_Even"
 			(pin_names
 				(offset 1.016)
@@ -2493,12 +2351,6 @@
 		(uuid "84ec90e9-f28b-4714-a539-bdda9814cca0")
 	)
 	(junction
-		(at 187.325 262.255)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8cedc624-091d-4699-9fbe-77342dad9c82")
-	)
-	(junction
 		(at 236.22 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2587,12 +2439,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d11df362-8088-441b-a280-83d36bf88f8d")
-	)
-	(junction
-		(at 163.195 247.015)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3598e7a-8798-4cab-b720-6a7fcd0c79c7")
 	)
 	(junction
 		(at 330.835 151.765)
@@ -2901,16 +2747,6 @@
 			(type default)
 		)
 		(uuid "1235711a-14a1-4ee5-bd34-2cbf840bf25e")
-	)
-	(wire
-		(pts
-			(xy 168.275 262.255) (xy 163.195 262.255)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "127c423a-78fc-406a-b05b-b670490c9631")
 	)
 	(wire
 		(pts
@@ -3564,16 +3400,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.975 262.255) (xy 187.325 262.255)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c3db37c-fb46-4193-a67f-6630a17e227d")
-	)
-	(wire
-		(pts
 			(xy 170.18 118.745) (xy 196.215 118.745)
 		)
 		(stroke
@@ -3701,16 +3527,6 @@
 			(type default)
 		)
 		(uuid "7a6050db-4718-4049-b177-4891e874a006")
-	)
-	(wire
-		(pts
-			(xy 163.195 247.015) (xy 163.195 262.255)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a9f796f-5be7-4930-a8b5-419415d637d1")
 	)
 	(wire
 		(pts
@@ -11654,74 +11470,6 @@
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2/5e704452-8194-4ffa-ae44-aa4ff02d0276"
 					(reference "U8")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x01")
-		(at 173.355 262.255 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e52ca035-c027-459e-adb9-fc49715676e0")
-		(property "Reference" "J71"
-			(at 174.625 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x01"
-			(at 174.625 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 173.355 262.255 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.355 262.255 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 173.355 262.255 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94db0a5f-d2ca-49eb-a5c1-7f095748b5cf")
-		)
-		(pin "2"
-			(uuid "ad085e31-f48e-45ac-a880-5f01c4fd230c")
-		)
-		(instances
-			(project "main-board"
-				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2/5e704452-8194-4ffa-ae44-aa4ff02d0276"
-					(reference "J71")
-					(unit 1)
 				)
 			)
 		)
