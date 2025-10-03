@@ -3004,7 +3004,7 @@
 							)
 						)
 					)
-					(number "A48"
+					(number "A49"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3022,7 +3022,7 @@
 							)
 						)
 					)
-					(number "B48"
+					(number "B49"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5370,7 +5370,7 @@
 							)
 						)
 					)
-					(number "C15"
+					(number "C9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -15131,7 +15131,7 @@
 		(pin "A43"
 			(uuid "1e4d0fb5-f534-4179-bc9b-00fe48efdfbd")
 		)
-		(pin "A48"
+		(pin "A49"
 			(uuid "9f688035-3bda-4fa6-8835-473f7104028e")
 		)
 		(pin "B3"
@@ -15167,7 +15167,7 @@
 		(pin "B43"
 			(uuid "ff6de05a-537c-408a-bba2-2be0075aa982")
 		)
-		(pin "B48"
+		(pin "B49"
 			(uuid "4f02d1fd-21a1-45a0-bce0-4cd7b8f38586")
 		)
 		(pin "C3"
@@ -15458,7 +15458,7 @@
 		(pin "C10"
 			(uuid "cc7c4f2b-1211-4239-a29c-60839d7eb588")
 		)
-		(pin "C15"
+		(pin "C9"
 			(uuid "f645c493-0efc-41d2-8c35-c461bf3a4e3c")
 		)
 		(pin "A32"

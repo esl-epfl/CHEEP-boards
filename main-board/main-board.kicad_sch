@@ -6359,12 +6359,6 @@
 		(uuid "91c3a0c9-1d9c-402a-9afc-2343f079227d")
 	)
 	(junction
-		(at 434.34 361.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "942f49e9-f818-4caa-bdc4-eff89d74b0b8")
-	)
-	(junction
 		(at 217.17 341.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6435,6 +6429,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4928387-2d9f-46de-b41c-d1bd38bf5453")
+	)
+	(junction
+		(at 412.75 384.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b554de4c-7096-479e-8f4c-88d8864f3bf8")
 	)
 	(junction
 		(at 86.995 250.825)
@@ -8529,23 +8529,13 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 361.95) (xy 434.34 361.95)
+			(xy 433.07 361.95) (xy 444.5 361.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "35269221-0acd-4566-81d1-8ac2bcae1a4f")
-	)
-	(wire
-		(pts
-			(xy 434.34 361.95) (xy 444.5 361.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3526b79b-2ef9-4523-a824-63baef0dd4b6")
 	)
 	(wire
 		(pts
@@ -9539,6 +9529,16 @@
 	)
 	(wire
 		(pts
+			(xy 412.75 384.81) (xy 426.72 384.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6365278c-f6ff-45d9-8bc3-288bfba70bc9")
+	)
+	(wire
+		(pts
 			(xy 267.97 259.08) (xy 255.905 259.08)
 		)
 		(stroke
@@ -10019,7 +10019,7 @@
 	)
 	(wire
 		(pts
-			(xy 405.13 384.81) (xy 426.72 384.81)
+			(xy 405.13 384.81) (xy 412.75 384.81)
 		)
 		(stroke
 			(width 0)
@@ -15320,7 +15320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:TP_50_28_RING"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 281.8892 268.8082 0)
 			(effects
 				(font
@@ -18867,7 +18867,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:TP_50_28_RING"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 297.1292 334.4418 0)
 			(effects
 				(font
@@ -19589,7 +19589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:TP_50_28_RING"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 306.0192 298.8818 0)
 			(effects
 				(font
@@ -20883,7 +20883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:TP_50_28_RING"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 266.6492 241.7318 0)
 			(effects
 				(font
@@ -21932,7 +21932,7 @@
 	)
 	(symbol
 		(lib_id "Library:TP")
-		(at 434.34 361.95 0)
+		(at 412.75 384.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -21941,7 +21941,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3be17ea-1e48-4046-b4b9-98118b5371cd")
 		(property "Reference" "TP1"
-			(at 443.23 359.6871 0)
+			(at 421.64 382.5471 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21950,7 +21950,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 443.23 361.5921 0)
+			(at 421.64 384.4521 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21958,8 +21958,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:TP_50_28_RING"
-			(at 434.2892 364.9218 0)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 412.6992 387.7818 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21969,7 +21969,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 434.34 361.95 0)
+			(at 412.75 384.81 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21979,7 +21979,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 434.34 361.95 0)
+			(at 412.75 384.81 0)
 			(effects
 				(font
 					(size 1 1)
@@ -23205,7 +23205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:TP_50_28_RING"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 314.9092 241.7318 0)
 			(effects
 				(font

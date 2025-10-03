@@ -2140,6 +2140,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 166.37) (xy 114.3 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a0308ba-b76f-4852-96bc-b02225ab2c93")
+	)
+	(wire
+		(pts
 			(xy 153.67 67.31) (xy 153.67 107.95)
 		)
 		(stroke
@@ -2390,6 +2400,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 158.75) (xy 127 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56b37944-bc55-4a2c-8533-274692b4271f")
+	)
+	(wire
+		(pts
 			(xy 73.025 139.7) (xy 140.335 139.7)
 		)
 		(stroke
@@ -2610,6 +2630,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 158.75) (xy 114.3 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93cc8635-9485-43cb-8c0c-1698248c8efd")
+	)
+	(wire
+		(pts
 			(xy 73.025 128.27) (xy 93.98 128.27)
 		)
 		(stroke
@@ -2757,6 +2787,16 @@
 			(type default)
 		)
 		(uuid "b3f99ef1-e239-4692-a898-82e440e0e03d")
+	)
+	(wire
+		(pts
+			(xy 124.46 166.37) (xy 127 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99299a2-37d9-4986-aaab-f62af9925d39")
 	)
 	(bus
 		(pts
@@ -3199,7 +3239,7 @@
 		(uuid "97847cbe-137f-4a70-99ea-8122010ebd2f")
 	)
 	(label "VDD_IO_main"
-		(at 114.3 158.75 0)
+		(at 127 158.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3324,6 +3364,82 @@
 			(justify right)
 		)
 		(uuid "ffaf8f64-9740-450c-b977-2761875d6adf")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.65 166.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03c54b7d-394b-4da5-a603-d7d5074705ab")
+		(property "Reference" "R73"
+			(at 115.57 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 125.095 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 120.65 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 120.65 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93a5691b-6941-4e4c-a81f-3f14f0b9494c")
+		)
+		(pin "2"
+			(uuid "bff0874a-d768-4880-b932-0f73b5941efb")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2/fd9da62b-9782-45f1-a1dc-4f8db8879f00"
+					(reference "R73")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4249,7 +4365,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 166.37 0)
+		(at 127 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4257,7 +4373,7 @@
 		(dnp no)
 		(uuid "5ee3e239-f67d-4813-9337-a8f11f5a63c3")
 		(property "Reference" "#PWR11"
-			(at 114.3 172.72 0)
+			(at 127 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4266,7 +4382,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.427 170.7642 0)
+			(at 127.127 170.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +4390,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 166.37 0)
+			(at 127 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +4399,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 166.37 0)
+			(at 127 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4408,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 166.37 0)
+			(at 127 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5175,6 +5291,82 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2/fd9da62b-9782-45f1-a1dc-4f8db8879f00"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.65 158.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a234fdd7-acf7-4890-8340-b316182ccd5c")
+		(property "Reference" "R72"
+			(at 115.57 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 125.095 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 120.65 160.528 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 120.65 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7987bb9-fc06-4bea-8b37-3f65b867609b")
+		)
+		(pin "2"
+			(uuid "d8a7c86f-7f7f-4c3a-85ab-ae84a753237a")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2/fd9da62b-9782-45f1-a1dc-4f8db8879f00"
+					(reference "R72")
 					(unit 1)
 				)
 			)
