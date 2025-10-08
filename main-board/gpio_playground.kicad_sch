@@ -3850,6 +3850,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C192300"
+			(at 102.87 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "89353d6e-01f0-4ea3-b654-1d3c9b3a592f")
 		)
@@ -4005,6 +4014,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 110.49 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C221678"
+			(at 110.49 126.238 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,6 +4320,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7475"
+			(at 180.594 101.092 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba3d7050-293f-4106-8f2a-21e4087b10e3")
 		)
@@ -4389,7 +4416,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "BIWIN_DTS04GE_SMD"
 			(at 119.38 154.94 0)
 			(effects
 				(font
@@ -4417,6 +4444,24 @@
 		)
 		(property "Description" ""
 			(at 125.73 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "lcsc" "C3294670"
+			(at 125.73 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3294670"
+			(at 119.126 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4640,6 +4685,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 123.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C221678"
+			(at 123.19 129.286 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4988,7 +5042,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84263"
+		(property "LCSC" "C84266"
 			(at 217.805 123.19 0)
 			(effects
 				(font
@@ -5217,7 +5271,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84263"
+		(property "LCSC" "C965804"
 			(at 217.805 120.65 0)
 			(effects
 				(font
@@ -5361,7 +5415,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84263"
+		(property "LCSC" "C965804"
 			(at 217.805 110.49 0)
 			(effects
 				(font
@@ -6009,7 +6063,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84263"
+		(property "LCSC" "C84266"
 			(at 217.805 105.41 0)
 			(effects
 				(font
@@ -6078,6 +6132,15 @@
 		)
 		(property "Description" "Single AND Gate, Low-Voltage CMOS"
 			(at 123.19 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C113521"
+			(at 135.89 85.1214 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6239,6 +6302,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C221678"
+			(at 99.06 123.952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "34ac0cef-e972-4809-9d55-3bcfa6a1448e")
 		)
@@ -6365,6 +6437,15 @@
 		)
 		(property "Description" "Single AND Gate, Low-Voltage CMOS"
 			(at 134.62 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C113521"
+			(at 147.32 60.9914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6601,6 +6682,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7465"
+			(at 92.71 87.6614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "01d18b9a-8f34-414c-b375-b2d58fe54fa2")
 		)
@@ -6817,7 +6907,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84263"
+		(property "LCSC" "C965804"
 			(at 217.805 115.57 0)
 			(effects
 				(font
@@ -6859,7 +6949,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 194.056 91.313 0)
 			(effects
 				(font
