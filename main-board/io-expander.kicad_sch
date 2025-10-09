@@ -272,7 +272,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "cheeps-tb:tcal6416"
+		(symbol "cheeps-tb:tcal6416_WQSP"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -319,7 +319,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "tcal6416_0_1"
+			(symbol "tcal6416_WQSP_0_1"
 				(rectangle
 					(start 0 30.48)
 					(end 15.24 0)
@@ -332,7 +332,7 @@
 					)
 				)
 			)
-			(symbol "tcal6416_1_1"
+			(symbol "tcal6416_WQSP_1_1"
 				(pin input line
 					(at -2.54 29.21 0)
 					(length 2.54)
@@ -343,7 +343,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -361,7 +361,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "23"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -379,7 +379,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -397,7 +397,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -415,7 +415,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -433,7 +433,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -451,7 +451,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -469,7 +469,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -487,7 +487,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -505,7 +505,7 @@
 							)
 						)
 					)
-					(number "10"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -523,7 +523,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -541,7 +541,7 @@
 							)
 						)
 					)
-					(number "12"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -577,7 +577,7 @@
 							)
 						)
 					)
-					(number "23"
+					(number "21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -595,7 +595,7 @@
 							)
 						)
 					)
-					(number "22"
+					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -613,7 +613,7 @@
 							)
 						)
 					)
-					(number "21"
+					(number "19"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -631,7 +631,7 @@
 							)
 						)
 					)
-					(number "24"
+					(number "18"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -649,7 +649,7 @@
 							)
 						)
 					)
-					(number "20"
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -667,7 +667,7 @@
 							)
 						)
 					)
-					(number "19"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -685,7 +685,7 @@
 							)
 						)
 					)
-					(number "18"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -703,7 +703,7 @@
 							)
 						)
 					)
-					(number "17"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -721,7 +721,7 @@
 							)
 						)
 					)
-					(number "16"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -739,7 +739,7 @@
 							)
 						)
 					)
-					(number "15"
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -757,7 +757,7 @@
 							)
 						)
 					)
-					(number "14"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -775,7 +775,7 @@
 							)
 						)
 					)
-					(number "13"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1056,22 +1056,6 @@
 		(color 0 0 0 0)
 		(uuid "e751f3bf-6a0e-4167-8499-7c0db4179ea9")
 	)
-	(no_connect
-		(at 71.12 38.1)
-		(uuid "0c266ab1-4eae-4ece-b9f7-6944f915fb09")
-	)
-	(no_connect
-		(at 71.12 40.64)
-		(uuid "2a83c9b5-d9ea-4f09-b9e3-a7d896972c46")
-	)
-	(no_connect
-		(at 71.12 35.56)
-		(uuid "46696270-2ddf-4aac-bb3e-864c449c2644")
-	)
-	(no_connect
-		(at 71.12 33.02)
-		(uuid "d2dfb558-7581-4893-b809-7f5920d59bb1")
-	)
 	(bus_entry
 		(at 19.05 27.94)
 		(size 2.54 2.54)
@@ -1116,6 +1100,15 @@
 			(type default)
 		)
 		(uuid "1af8c426-a57a-494b-877c-9a189f61bb7d")
+	)
+	(bus_entry
+		(at 186.69 81.28)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "375b8b0a-ed7b-4e6b-a776-afd5cfd50b5c")
 	)
 	(bus_entry
 		(at 186.69 86.36)
@@ -1235,6 +1228,15 @@
 		(uuid "921ddbdf-47c4-48fc-a82b-b8441d78f9b1")
 	)
 	(bus_entry
+		(at 186.69 76.2)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93592d7e-9818-4301-b865-6d04b142ddd1")
+	)
+	(bus_entry
 		(at 97.79 43.18)
 		(size 2.54 -2.54)
 		(stroke
@@ -1260,6 +1262,15 @@
 			(type default)
 		)
 		(uuid "bba47cd5-0963-4269-88ad-8c595f3b8efd")
+	)
+	(bus_entry
+		(at 186.69 78.74)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c603695f-bb17-401c-898e-6fc3019500e4")
 	)
 	(bus_entry
 		(at 147.32 83.82)
@@ -1389,6 +1400,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 76.2) (xy 186.69 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1499074d-6829-47ed-8a47-001bcffdcfc2")
+	)
+	(wire
+		(pts
 			(xy 34.29 59.69) (xy 36.83 59.69)
 		)
 		(stroke
@@ -1406,6 +1427,16 @@
 			(type default)
 		)
 		(uuid "17e27ec2-cf60-4a5e-8708-7d6ca09cce0d")
+	)
+	(bus
+		(pts
+			(xy 189.23 76.2) (xy 189.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a320e0a-86ce-4763-bbc3-d30cdb213807")
 	)
 	(bus
 		(pts
@@ -1679,6 +1710,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 22.86) (xy 74.93 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53a08c9a-0f50-49ba-b66e-b6bab8ed0dd0")
+	)
+	(wire
+		(pts
 			(xy 21.59 43.18) (xy 36.83 43.18)
 		)
 		(stroke
@@ -1799,6 +1840,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 81.28) (xy 186.69 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66dde0d6-bb7a-4aae-aab3-7196ded65013")
+	)
+	(wire
+		(pts
 			(xy 41.91 48.26) (xy 50.8 48.26)
 		)
 		(stroke
@@ -1877,6 +1928,16 @@
 		)
 		(uuid "76c5a660-ac58-4c36-ad0b-54d02fced3fd")
 	)
+	(bus
+		(pts
+			(xy 189.23 73.66) (xy 189.23 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77514c17-693b-4e08-91bc-27d9f28911f9")
+	)
 	(wire
 		(pts
 			(xy 87.63 48.26) (xy 97.79 48.26)
@@ -1886,6 +1947,16 @@
 			(type default)
 		)
 		(uuid "7e76cd09-a798-4c52-a3d1-68baecdd8c8d")
+	)
+	(wire
+		(pts
+			(xy 177.8 78.74) (xy 186.69 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f9094da-3ed5-4c8e-ac22-7cd0c928c448")
 	)
 	(bus
 		(pts
@@ -2116,6 +2187,16 @@
 			(type default)
 		)
 		(uuid "b4de9d9c-211a-4187-b5b6-9da6ab3ca306")
+	)
+	(bus
+		(pts
+			(xy 189.23 78.74) (xy 189.23 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bca7c76b-f94c-4515-b41f-f76c5c22d880")
 	)
 	(wire
 		(pts
@@ -2717,16 +2798,6 @@
 		)
 		(uuid "57a16eb9-5203-4e6b-9f19-2fa4b0947d98")
 	)
-	(label "VDD_IO_main"
-		(at 71.12 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "57a45b77-1025-4b1f-b7e2-6cc22f0da3a7")
-	)
 	(label "EN_CG_9"
 		(at 73.66 48.26 0)
 		(effects
@@ -2797,6 +2868,16 @@
 		)
 		(uuid "8af7ba6e-8082-4626-a413-f4198b39b778")
 	)
+	(label "GPIO_18"
+		(at 177.8 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94b53f92-7e8d-4f67-81e1-39449451e4f3")
+	)
 	(label "EN_CG_2"
 		(at 40.64 40.64 0)
 		(effects
@@ -2826,6 +2907,16 @@
 			(justify left bottom)
 		)
 		(uuid "afdd5d7f-0f32-4f12-a180-c9c59bc9489d")
+	)
+	(label "GPIO_20"
+		(at 177.8 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b818897e-55c1-4755-99d2-ea8733e84152")
 	)
 	(label "3V3"
 		(at 48.26 25.4 180)
@@ -2887,6 +2978,16 @@
 		)
 		(uuid "db981846-eda9-43e3-80d8-b7e62c78f514")
 	)
+	(label "GPIO_19"
+		(at 177.8 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f02c9147-7138-48ca-8eb2-566babd284db")
+	)
 	(global_label "VDDIO"
 		(shape input)
 		(at 118.11 95.25 0)
@@ -2911,7 +3012,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 118.11 99.06 0)
+		(at 74.93 22.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2921,7 +3022,7 @@
 		)
 		(uuid "085efe54-3dcd-4b59-98f6-7afb712d2708")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.6028 99.06 0)
+			(at 81.4228 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3021,7 +3122,7 @@
 	)
 	(hierarchical_label "LED_FTDI_2"
 		(shape input)
-		(at 177.8 78.74 0)
+		(at 71.12 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3043,7 +3144,7 @@
 	)
 	(hierarchical_label "BTN_FTDI"
 		(shape input)
-		(at 177.8 81.28 0)
+		(at 71.12 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3052,7 +3153,7 @@
 		)
 		(uuid "7a63716a-331a-4796-bffc-07a3c72688f5")
 	)
-	(hierarchical_label "GPIO_[5..17]"
+	(hierarchical_label "GPIO_[5..20]"
 		(shape bidirectional)
 		(at 148.59 60.96 0)
 		(effects
@@ -3063,9 +3164,20 @@
 		)
 		(uuid "b5224262-5e7d-4e29-bf9d-ee8f0ad54741")
 	)
+	(hierarchical_label "LED_FTDI_3"
+		(shape input)
+		(at 71.12 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e66e3240-56c2-4f6b-9ea7-7e6f6900df93")
+	)
 	(hierarchical_label "LED_FTDI_1"
 		(shape input)
-		(at 177.8 76.2 0)
+		(at 71.12 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3236,7 +3348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "cheeps-tb:tcal6416")
+		(lib_id "cheeps-tb:tcal6416_WQSP")
 		(at 160.02 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3246,15 +3358,15 @@
 		(fields_autoplaced yes)
 		(uuid "3ceec3e0-e7a8-4432-b5bc-47f362ddfec3")
 		(property "Reference" "U7"
-			(at 167.6884 60.96 0)
+			(at 167.64 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 167.6884 63.5 0)
+		(property "Value" "TCAL6416"
+			(at 167.64 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,7 +3374,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm"
-			(at 160.02 95.25 0)
+			(at 159.9231 95.0966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,7 +3383,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcal6416.pdf"
-			(at 160.02 95.25 0)
+			(at 159.9231 95.0966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3280,7 +3392,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 95.25 0)
+			(at 159.9231 95.0966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5956642"
+			(at 167.64 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3390,7 +3511,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100nF"
 			(at 25.6032 24.257 0)
 			(effects
 				(font
@@ -3444,7 +3565,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C30926"
 			(at 25.6032 26.5684 0)
 			(effects
 				(font
@@ -3918,7 +4039,7 @@
 		)
 	)
 	(symbol
-		(lib_id "cheeps-tb:tcal6416")
+		(lib_id "cheeps-tb:tcal6416_WQSP")
 		(at 53.34 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3928,15 +4049,15 @@
 		(fields_autoplaced yes)
 		(uuid "7bb11c76-8aa7-4f7f-b69d-30db8d62f88d")
 		(property "Reference" "U6"
-			(at 61.0084 17.78 0)
+			(at 60.96 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 61.0084 20.32 0)
+		(property "Value" "TCAL6416"
+			(at 60.96 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3944,7 +4065,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm"
-			(at 53.34 52.07 0)
+			(at 53.2431 51.9166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3953,7 +4074,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcal6416.pdf"
-			(at 53.34 52.07 0)
+			(at 53.2431 51.9166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3962,7 +4083,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 52.07 0)
+			(at 53.2431 51.9166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5956642"
+			(at 60.96 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4456,7 +4586,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100nF"
 			(at 134.8232 67.437 0)
 			(effects
 				(font
@@ -4510,7 +4640,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C30926"
 			(at 134.8232 69.7484 0)
 			(effects
 				(font
