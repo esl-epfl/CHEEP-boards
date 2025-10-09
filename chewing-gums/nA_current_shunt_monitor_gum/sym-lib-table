@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "External-lib")(type "KiCad")(uri "${KIPRJMOD}/../../htb/LibLoader/SamacSys_Parts.kicad_sym")(options "")(descr ""))
+  (lib (name "PCB-connectors-lib")(type "KiCad")(uri "${KIPRJMOD}/../../cheeps-tb.kicad_sym")(options "")(descr ""))
+)
