@@ -11,9 +11,9 @@
 		(comment 1 "Jose Miranda & Christoph Müller 2023")
 	)
 	(lib_symbols
-		(symbol "Connector:Barrel_Jack_MountingPin"
+		(symbol "Connector:Barrel_Jack"
 			(pin_names
-				(hide yes)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -26,13 +26,12 @@
 					)
 				)
 			)
-			(property "Value" "Barrel_Jack_MountingPin"
-				(at 1.27 -6.35 0)
+			(property "Value" "Barrel_Jack"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -53,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "DC Barrel Jack with a mounting pin"
+			(property "Description" "DC Barrel Jack"
 				(at 0 0 0)
 				(effects
 					(font
@@ -80,7 +79,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Barrel_Jack_MountingPin_0_1"
+			(symbol "Barrel_Jack_0_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -152,45 +151,7 @@
 					)
 				)
 			)
-			(symbol "Barrel_Jack_MountingPin_1_1"
-				(polyline
-					(pts
-						(xy -1.016 -4.572) (xy 1.016 -4.572)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Mounting"
-					(at 0 -4.191 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 3.048)
-					(name "MountPin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "Barrel_Jack_1_1"
 				(pin passive line
 					(at 7.62 2.54 180)
 					(length 2.54)
@@ -4604,6 +4565,198 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "dk_Test-Points:5029"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at -1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "5029"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "PC TEST POINT MINIATURE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digi-Key_PN" "36-5029CT-ND"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MPN" "5029"
+				(at 5.08 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Category" "Test and Measurement"
+				(at 5.08 15.24 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Family" "Test Points"
+				(at 5.08 17.78 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+				(at 5.08 20.32 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "PC TEST POINT MINIATURE"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Keystone Electronics"
+				(at 5.08 27.94 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Status" "Active"
+				(at 5.08 30.48 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "36-5029CT-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "5029_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.5588)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "5029_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.905)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "gsb_symbols:SI5351A-B-GTR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7827,6 +7980,16 @@
 	)
 	(wire
 		(pts
+			(xy 509.27 345.44) (xy 509.27 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f28eaa1-42b3-42b5-bed0-001621c826b6")
+	)
+	(wire
+		(pts
 			(xy 426.72 361.95) (xy 433.07 361.95)
 		)
 		(stroke
@@ -7844,16 +8007,6 @@
 			(type default)
 		)
 		(uuid "0fc84f31-c364-4476-8556-a2ea63869e22")
-	)
-	(wire
-		(pts
-			(xy 448.056 132.715) (xy 497.586 132.715)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10128ea2-695f-447c-b668-6c666dc64a39")
 	)
 	(wire
 		(pts
@@ -8304,16 +8457,6 @@
 			(type default)
 		)
 		(uuid "255475fe-517a-4299-8d35-9faeb84f89ef")
-	)
-	(bus
-		(pts
-			(xy 448.056 111.76) (xy 463.296 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25aa6dbb-be74-44a4-bb4b-058922bece5f")
 	)
 	(polyline
 		(pts
@@ -9245,6 +9388,16 @@
 		)
 		(uuid "519b020d-74f7-4e44-a2c0-c288e3ce7b45")
 	)
+	(wire
+		(pts
+			(xy 539.75 345.44) (xy 539.75 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51bb8408-f9e9-4f48-a952-2fce2905ba71")
+	)
 	(bus
 		(pts
 			(xy 455.93 280.67) (xy 455.93 283.21)
@@ -9284,6 +9437,16 @@
 			(type default)
 		)
 		(uuid "52fd235b-347b-4a7c-813f-7ec12a53861e")
+	)
+	(wire
+		(pts
+			(xy 447.04 133.35) (xy 499.11 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539d56ed-63db-4d98-9e64-3f86f8027baa")
 	)
 	(bus
 		(pts
@@ -9344,6 +9507,16 @@
 			(type dash)
 		)
 		(uuid "57224e8a-c241-454a-be71-1afe9ea164d5")
+	)
+	(bus
+		(pts
+			(xy 447.04 111.76) (xy 463.296 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5750d0eb-93bb-458f-82d0-2ce77e8c0784")
 	)
 	(wire
 		(pts
@@ -9485,16 +9658,6 @@
 		)
 		(uuid "5c49a0bd-d3f9-4b45-9043-e7bbd0d76307")
 	)
-	(bus
-		(pts
-			(xy 448.056 119.38) (xy 469.265 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c4ab295-5189-4ebc-bdeb-761fb9e6e9dc")
-	)
 	(polyline
 		(pts
 			(xy 95.25 96.52) (xy 107.315 96.52)
@@ -9504,6 +9667,16 @@
 			(type default)
 		)
 		(uuid "5c517d7a-fd44-46ce-99b3-4930f2292c39")
+	)
+	(bus
+		(pts
+			(xy 447.04 115.57) (xy 463.296 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c6f9545-8536-46f9-9347-b7280f503884")
 	)
 	(wire
 		(pts
@@ -9604,16 +9777,6 @@
 			(type default)
 		)
 		(uuid "5fb86683-cbb5-4ec9-90f7-1cab19d1a089")
-	)
-	(wire
-		(pts
-			(xy 448.056 137.795) (xy 497.586 137.795)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fda4239-af5e-48e3-b8b6-d993868a890f")
 	)
 	(wire
 		(pts
@@ -10147,6 +10310,16 @@
 	)
 	(wire
 		(pts
+			(xy 499.11 128.27) (xy 495.3 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d2bed1c-b672-43e0-840e-694a75214766")
+	)
+	(wire
+		(pts
 			(xy 519.43 269.24) (xy 520.7 269.24)
 		)
 		(stroke
@@ -10327,6 +10500,26 @@
 	)
 	(wire
 		(pts
+			(xy 524.51 345.44) (xy 524.51 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824daba9-f705-42e4-81a3-40fc6f705492")
+	)
+	(wire
+		(pts
+			(xy 495.3 130.81) (xy 492.76 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "825b8a10-778a-435a-95c3-d7ebdf78759b")
+	)
+	(wire
+		(pts
 			(xy 342.9 91.44) (xy 358.775 91.44)
 		)
 		(stroke
@@ -10337,7 +10530,7 @@
 	)
 	(bus
 		(pts
-			(xy 494.665 104.14) (xy 497.586 104.14)
+			(xy 494.665 104.14) (xy 499.11 104.14)
 		)
 		(stroke
 			(width 0)
@@ -10454,16 +10647,6 @@
 			(type default)
 		)
 		(uuid "896e2886-e453-4a63-8641-4f638a6b1b8f")
-	)
-	(bus
-		(pts
-			(xy 448.056 115.57) (xy 463.296 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a6cfadc-411e-4973-8411-c1e3be0b949e")
 	)
 	(wire
 		(pts
@@ -10635,6 +10818,16 @@
 		)
 		(uuid "91751d50-ad4e-4663-ab40-ac2526f53014")
 	)
+	(bus
+		(pts
+			(xy 447.04 119.38) (xy 469.265 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91a068a9-9cf6-4322-bf14-67dc63ca42d7")
+	)
 	(wire
 		(pts
 			(xy 110.49 248.285) (xy 111.125 248.285)
@@ -10644,6 +10837,16 @@
 			(type default)
 		)
 		(uuid "9200a8ab-d89e-487f-a4d5-124e5a49c6e6")
+	)
+	(bus
+		(pts
+			(xy 447.04 107.95) (xy 463.296 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92222e4a-d6a1-4a47-8134-67bb77ed2bed")
 	)
 	(bus
 		(pts
@@ -10877,6 +11080,16 @@
 	)
 	(wire
 		(pts
+			(xy 495.3 128.27) (xy 495.3 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c46ad55-43c3-4e03-9656-0d706a9c5adf")
+	)
+	(wire
+		(pts
 			(xy 254 276.86) (xy 255.905 276.86)
 		)
 		(stroke
@@ -10964,6 +11177,16 @@
 			(type default)
 		)
 		(uuid "a030c4cd-e09c-4991-9bd0-de7d2dc9a467")
+	)
+	(wire
+		(pts
+			(xy 554.99 345.44) (xy 554.99 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a06da680-2d81-4c55-be84-53e5598ea841")
 	)
 	(wire
 		(pts
@@ -11064,6 +11287,16 @@
 			(type default)
 		)
 		(uuid "a6cbf225-707e-46b5-a6bd-5f1cd07302bf")
+	)
+	(wire
+		(pts
+			(xy 562.61 345.44) (xy 562.61 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7a7a6e8-a43f-48e1-b2c4-f66fc1a87f83")
 	)
 	(wire
 		(pts
@@ -11194,6 +11427,16 @@
 			(type default)
 		)
 		(uuid "ab2b1da2-5c34-445f-b8e2-7757d113aa02")
+	)
+	(wire
+		(pts
+			(xy 547.37 345.44) (xy 547.37 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abb9338e-14b9-4fc6-801a-d1e0cc322f8b")
 	)
 	(wire
 		(pts
@@ -11664,16 +11907,6 @@
 			(type default)
 		)
 		(uuid "c5e24798-53bb-4144-8a91-35ca025f9c38")
-	)
-	(bus
-		(pts
-			(xy 448.056 107.95) (xy 463.296 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c656dcfa-0b59-41da-862c-e76a9b4cdaca")
 	)
 	(wire
 		(pts
@@ -12265,6 +12498,16 @@
 		)
 		(uuid "e0c2d610-90ed-4b73-b5b6-93ad5100a73d")
 	)
+	(wire
+		(pts
+			(xy 532.13 345.44) (xy 532.13 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ea0db0-5a52-442f-9b2f-130f3e0cd64b")
+	)
 	(bus
 		(pts
 			(xy 455.93 298.45) (xy 455.93 300.99)
@@ -12617,6 +12860,16 @@
 	)
 	(wire
 		(pts
+			(xy 516.89 345.44) (xy 516.89 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3eaebf6-d55e-40dc-95a5-693e5ba556c0")
+	)
+	(wire
+		(pts
 			(xy 323.85 73.66) (xy 358.775 73.66)
 		)
 		(stroke
@@ -12694,6 +12947,16 @@
 			(type default)
 		)
 		(uuid "f7163aef-d85a-4897-a118-277cd5874d28")
+	)
+	(wire
+		(pts
+			(xy 447.04 138.43) (xy 499.11 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7436767-b5b9-4d2d-b27c-7fe869cda017")
 	)
 	(wire
 		(pts
@@ -13326,7 +13589,7 @@
 		(uuid "62bfea45-10c7-41d9-9a70-8ef47eaf65fb")
 	)
 	(label "EXIT_VALID"
-		(at 477.266 132.715 180)
+		(at 477.52 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13926,7 +14189,7 @@
 		(uuid "c015138d-85bc-450e-be81-5a4f81315fe7")
 	)
 	(label "EXIT_VALUE"
-		(at 477.266 137.795 180)
+		(at 477.52 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13934,6 +14197,16 @@
 			(justify right bottom)
 		)
 		(uuid "c57b40c3-6ee5-474c-9cd4-7257897b4670")
+	)
+	(label "nRST"
+		(at 492.76 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c59ba8a4-f21a-474c-a9cd-fceaf98c3989")
 	)
 	(label "5V"
 		(at 266.065 331.47 0)
@@ -14590,6 +14863,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 509.27 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "005dde8a-bd99-4185-bd92-aba537453242")
+		(property "Reference" "#PWR046"
+			(at 509.27 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 509.397 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 509.27 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 509.27 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 509.27 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b60dad4a-1445-4a50-ad85-f0f568161043")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 314.96 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14936,7 +15274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL5030-XXX"
+		(property "Footprint" "Inductor_SMD:L_Vishay_IHLP-2020"
 			(at 421.64 361.95 0)
 			(effects
 				(font
@@ -15829,6 +16167,183 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 524.51 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f6fd107-b4c6-4a00-9429-1009e1cee61c")
+		(property "Reference" "TP10"
+			(at 523.24 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 524.51 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 519.43 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 519.43 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 524.51 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 519.43 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 519.43 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 519.43 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 519.43 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 519.43 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 519.43 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 519.43 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 519.43 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 519.43 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 524.51 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 524.51 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6db20d3e-42da-4516-8d8b-f932cd15690b")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -16775,6 +17290,360 @@
 		)
 	)
 	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 532.13 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e8d5835-3a4a-441f-bd95-bb5991a22eb2")
+		(property "Reference" "TP9"
+			(at 530.86 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 532.13 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 527.05 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 527.05 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 532.13 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 527.05 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 527.05 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 527.05 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 527.05 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 527.05 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 527.05 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 527.05 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 527.05 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 527.05 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 532.13 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 532.13 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed558488-00b0-4e7c-a7c5-59ba5c31775a")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 547.37 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ed58e15-54b9-49f5-94b4-e3b4b5626fea")
+		(property "Reference" "TP7"
+			(at 546.1 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 547.37 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 542.29 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 542.29 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 547.37 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 542.29 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 542.29 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 542.29 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 542.29 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 542.29 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 542.29 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 542.29 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 542.29 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 542.29 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 547.37 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 547.37 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f23ca1c-222e-4991-af4d-a3ec6b797a58")
+		)
+		(instances
+			(project ""
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 501.65 289.56 180)
 		(unit 1)
@@ -17345,6 +18214,183 @@
 		)
 	)
 	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 509.27 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43776332-71c2-4403-af0b-e118ae0d31a8")
+		(property "Reference" "TP12"
+			(at 508 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 509.27 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 504.19 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 504.19 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 509.27 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 504.19 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 504.19 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 504.19 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 504.19 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 504.19 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 504.19 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 504.19 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 504.19 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 504.19 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 509.27 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 509.27 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3ac1583-0c20-4e47-a6fa-fd517d35d7a4")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 121.92 293.37 90)
 		(mirror x)
@@ -17591,6 +18637,71 @@
 			(project ""
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 516.89 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "487be9b9-fbee-4331-a30d-f23c09431cb2")
+		(property "Reference" "#PWR0133"
+			(at 516.89 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 517.017 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 516.89 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 516.89 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 516.89 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77cb1a3f-5267-474f-9d52-a81165837aac")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -18397,6 +19508,360 @@
 		)
 	)
 	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 554.99 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63db5a79-172b-4047-920f-c2b06797593a")
+		(property "Reference" "TP13"
+			(at 553.72 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 554.99 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 549.91 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 549.91 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 554.99 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 549.91 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 549.91 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 549.91 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 549.91 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 549.91 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 549.91 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 549.91 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 549.91 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 549.91 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 554.99 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 554.99 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d86a180d-32ce-435e-9ea7-6af25f859b2f")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 539.75 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63e0ad6e-3a75-4b0f-bc3e-8ef0ed2d10f9")
+		(property "Reference" "TP8"
+			(at 538.48 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 539.75 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 534.67 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 534.67 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 539.75 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 534.67 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 534.67 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 534.67 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 534.67 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 534.67 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 534.67 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 534.67 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 534.67 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 534.67 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 539.75 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 539.75 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d96039b4-5c02-4a5d-ae7e-57d29bab1a96")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 447.04 361.95 90)
 		(unit 1)
@@ -18522,6 +19987,71 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "#PWR75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 524.51 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69cacb93-f5bf-4973-868e-083aa5ab5ce4")
+		(property "Reference" "#PWR0134"
+			(at 524.51 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 524.637 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 524.51 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 524.51 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 524.51 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c41d57c2-5415-4d1e-9b2a-1ebecf90177d")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -19106,6 +20636,136 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 554.99 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80d55191-e7e0-4223-94dd-5b4a35bb7594")
+		(property "Reference" "#PWR0138"
+			(at 554.99 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 555.117 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 554.99 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 554.99 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 554.99 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c078f17-3758-45b6-875a-9f61582b9890")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR0138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 539.75 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "83018bec-3547-46c6-9f07-eaea0a3847cc")
+		(property "Reference" "#PWR0136"
+			(at 539.75 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 539.877 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 539.75 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 539.75 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 539.75 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52c1b514-a7ad-4a90-9f55-9b1cf91c30ac")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -20295,6 +21955,183 @@
 		)
 	)
 	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 562.61 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97ce448c-f376-48a5-81a5-17d62df1a0ae")
+		(property "Reference" "TP14"
+			(at 561.34 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 562.61 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 557.53 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 557.53 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 562.61 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 557.53 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 557.53 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 557.53 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 557.53 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 557.53 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 557.53 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 557.53 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 557.53 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 557.53 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 562.61 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 562.61 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4b9e2c8-df10-4a3d-89cf-6d8b4155d3f4")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "External-lib:TPS2121RUXR")
 		(at 284.48 257.81 0)
 		(unit 1)
@@ -20322,7 +22159,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOTFL50P160X60-8N"
+		(property "Footprint" "heep_footprints:TI-VQFN-HR-12"
 			(at 313.69 255.27 0)
 			(effects
 				(font
@@ -21313,7 +23150,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Barrel_Jack_MountingPin")
+		(lib_id "Connector:Barrel_Jack")
 		(at 246.38 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21355,7 +23192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DC Barrel Jack with a mounting pin"
+		(property "Description" "DC Barrel Jack"
 			(at 246.38 274.32 0)
 			(effects
 				(font
@@ -21378,9 +23215,6 @@
 		)
 		(pin "2"
 			(uuid "bb03cb8b-b0c9-46a2-a1e2-fba0ab883dfe")
-		)
-		(pin "MP"
-			(uuid "12da8652-24e2-40a3-937d-51bf2aed2226")
 		)
 		(instances
 			(project "main-board"
@@ -21451,6 +23285,183 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 516.89 342.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abd338f1-6da4-4017-bdc3-37f90b7de697")
+		(property "Reference" "TP11"
+			(at 515.62 342.9382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 516.89 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 511.81 347.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 511.81 350.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 516.89 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 511.81 353.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 511.81 355.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 511.81 358.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 511.81 360.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 511.81 363.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 511.81 365.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 511.81 368.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 511.81 370.84 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 511.81 373.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 516.89 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 516.89 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48b8df3d-2271-4fb8-ac88-ace81474ea02")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -23904,6 +25915,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 532.13 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2473d7b-2920-4fe3-85d2-f07275897dff")
+		(property "Reference" "#PWR0135"
+			(at 532.13 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 532.257 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 532.13 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 532.13 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 532.13 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34748edf-0268-44d5-a55f-1483f4f2050d")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR0135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 96.52 241.3 90)
 		(unit 1)
@@ -24450,6 +26526,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 562.61 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0b8ce89-5cf3-4563-94e4-07cd27c80bfc")
+		(property "Reference" "#PWR0139"
+			(at 562.61 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 562.737 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 562.61 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 562.61 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 562.61 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2a59ca1-1832-4e5d-8b84-70989e09fa11")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR0139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 292.1 359.41 0)
 		(mirror y)
@@ -24923,6 +27064,71 @@
 			(project "main-board"
 				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
 					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 547.37 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff0246ea-3e62-41bc-8f77-fbe5c09ee835")
+		(property "Reference" "#PWR0137"
+			(at 547.37 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 547.497 352.3742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 547.37 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 547.37 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 547.37 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da82caa4-8407-4396-9662-2678ce0cd44b")
+		)
+		(instances
+			(project "main-board"
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -25803,7 +28009,7 @@
 	)
 	(sheet
 		(at 398.78 78.105)
-		(size 49.276 69.215)
+		(size 48.26 69.215)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -25836,7 +28042,7 @@
 			)
 		)
 		(pin "GPIO_[0..25]" bidirectional
-			(at 448.056 119.38 0)
+			(at 447.04 119.38 0)
 			(uuid "524819f5-b294-4c91-87cd-acbfd9173cd7")
 			(effects
 				(font
@@ -25856,7 +28062,7 @@
 			)
 		)
 		(pin "Vout_A_[1..12]" output
-			(at 448.056 107.95 0)
+			(at 447.04 107.95 0)
 			(uuid "4dcfff73-15d2-49aa-a527-a3cec917158b")
 			(effects
 				(font
@@ -25866,7 +28072,7 @@
 			)
 		)
 		(pin "Vout_B_[1..12]" output
-			(at 448.056 111.76 0)
+			(at 447.04 111.76 0)
 			(uuid "edf681b5-73c5-4c61-94e2-fe777f572d94")
 			(effects
 				(font
@@ -25876,7 +28082,7 @@
 			)
 		)
 		(pin "Vout_diff_[1..12]" input
-			(at 448.056 115.57 0)
+			(at 447.04 115.57 0)
 			(uuid "44ee9771-7094-4663-a284-20e06b994080")
 			(effects
 				(font
@@ -25906,7 +28112,7 @@
 			)
 		)
 		(pin "EXIT_VALUE" output
-			(at 448.056 137.795 0)
+			(at 447.04 138.43 0)
 			(uuid "869959a2-f0a5-4892-9224-3078b93a6575")
 			(effects
 				(font
@@ -25926,7 +28132,7 @@
 			)
 		)
 		(pin "EXIT_VALID" output
-			(at 448.056 132.715 0)
+			(at 447.04 133.35 0)
 			(uuid "f30e8518-8af6-4035-ab5d-50ae389fd6b8")
 			(effects
 				(font
@@ -26238,8 +28444,8 @@
 		)
 	)
 	(sheet
-		(at 497.586 99.695)
-		(size 37.084 41.91)
+		(at 499.11 99.695)
+		(size 35.56 41.91)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -26254,7 +28460,7 @@
 		)
 		(uuid "fd9da62b-9782-45f1-a1dc-4f8db8879f00")
 		(property "Sheetname" "GPIO_playground"
-			(at 497.586 98.9834 0)
+			(at 499.11 98.9834 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26263,7 +28469,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_playground.kicad_sch"
-			(at 497.586 142.1896 0)
+			(at 499.11 142.1896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26272,7 +28478,7 @@
 			)
 		)
 		(pin "EXIT_VALID" input
-			(at 497.586 132.715 180)
+			(at 499.11 133.35 180)
 			(uuid "fdb07e3a-0d25-4588-877e-29db58ce2156")
 			(effects
 				(font
@@ -26282,7 +28488,7 @@
 			)
 		)
 		(pin "EXIT_VALUE" input
-			(at 497.586 137.795 180)
+			(at 499.11 138.43 180)
 			(uuid "2e4bad36-b1da-4718-aed1-225bda008e73")
 			(effects
 				(font
@@ -26293,12 +28499,22 @@
 		)
 		(pin "GPIO{PB_1 PB_2 PB_3 LED_R_1 LED_G_1 LED_B_1 LED_R_2 LED_G_2 SW_1 SW_2 SW_3 SW_4}"
 			input
-			(at 497.586 104.14 180
+			(at 499.11 104.14 180
 			)
 			(uuid "312100cd-55d5-4bff-a8f5-99461b98bd13")
 			(effects
 				(font
 					(size 0.5 0.5)
+				)
+				(justify left)
+			)
+		)
+		(pin "HEEP_RESET" input
+			(at 499.11 128.27 180)
+			(uuid "4909206c-448b-4552-810a-5e233488afa4")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify left)
 			)

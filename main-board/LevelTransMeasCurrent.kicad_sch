@@ -5903,7 +5903,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm_sch"
+		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
 			(at 350.52 74.93 0)
 			(effects
 				(font
@@ -6138,7 +6138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SN74AXC4T774BQBR"
+		(property "Footprint" "heep_footprints:TI-UQFN-16"
 			(at 323.85 143.51 0)
 			(effects
 				(font
@@ -8192,7 +8192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 175.26 162.56 0)
 			(effects
 				(font
@@ -8533,7 +8533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SN74AXC4T774BQBR"
+		(property "Footprint" "heep_footprints:TI-UQFN-16"
 			(at 273.05 223.52 0)
 			(effects
 				(font
@@ -8982,7 +8982,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm_sch"
+		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
 			(at 348.615 135.89 0)
 			(effects
 				(font
@@ -9805,7 +9805,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SN74AXC4T774BQBR"
+		(property "Footprint" "heep_footprints:TI-UQFN-16"
 			(at 200.66 224.79 0)
 			(effects
 				(font
@@ -10061,7 +10061,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm_sch"
+		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
 			(at 372.11 135.89 0)
 			(effects
 				(font
