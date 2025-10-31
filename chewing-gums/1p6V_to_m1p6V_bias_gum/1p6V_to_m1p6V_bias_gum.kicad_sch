@@ -1674,16 +1674,28 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3VA"
-			(power)
+		(symbol "dk_Test-Points:5029"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "TP"
+				(at -1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "5029"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1691,15 +1703,27 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3VA"
-				(at 0 3.556 0)
+			(property "Footprint" "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm"
+				(at 5.08 5.08 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
+					(hide yes)
 				)
 			)
-			(property "Footprint" ""
+			(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "PC TEST POINT MINIATURE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1708,7 +1732,97 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Digi-Key_PN" "36-5029CT-ND"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MPN" "5029"
+				(at 5.08 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Category" "Test and Measurement"
+				(at 5.08 15.24 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Family" "Test Points"
+				(at 5.08 17.78 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+				(at 5.08 20.32 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "PC TEST POINT MINIATURE"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Keystone Electronics"
+				(at 5.08 27.94 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Status" "Active"
+				(at 5.08 30.48 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "36-5029CT-ND"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1717,68 +1831,24 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3VA_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
+			(symbol "5029_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.5588)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "+3.3VA_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "+3.3VA"
+			(symbol "5029_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.905)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1967,17 +2037,6 @@
 		)
 		(uuid f5e3eed3-2a70-44a8-82e1-dc38f8ba31f1)
 	)
-	(text "In case we need a load\nfor stability"
-		(exclude_from_sim no)
-		(at 166.37 89.916 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "03be744f-1064-4ae4-9f12-54613d2bc9d5")
-	)
 	(text "LDO 3.3V\n"
 		(exclude_from_sim no)
 		(at 159.766 25.908 0)
@@ -2061,10 +2120,28 @@
 		(uuid "8a400d08-dbe3-45e0-8ace-c564c8dc2bc0")
 	)
 	(junction
+		(at 195.58 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aa34288-fbcd-4ad1-b93e-5f7d781876b0")
+	)
+	(junction
 		(at 257.81 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0b824797-079a-492e-9d47-0f69b27682a2")
+	)
+	(junction
+		(at 190.5 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2aee5b33-ef6d-4a83-8179-fdbb062ff3d7")
+	)
+	(junction
+		(at 134.62 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f322343-ac26-4181-aea7-8cc8ea0c99a4")
 	)
 	(junction
 		(at 186.69 41.91)
@@ -2073,10 +2150,16 @@
 		(uuid "3fb79f5c-f2c6-48e0-bebf-a24075feaa80")
 	)
 	(junction
-		(at 227.33 43.18)
+		(at 260.35 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4396647d-7302-47d9-b6d2-c8f369690a94")
+		(uuid "54555eec-2a86-4406-9e5c-f2e0347a3c9e")
+	)
+	(junction
+		(at 124.46 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69c98317-3a68-41ce-9748-96988629cbbd")
 	)
 	(junction
 		(at 109.22 92.71)
@@ -2089,12 +2172,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7624bea6-5b7d-4800-9110-c764db16dda3")
-	)
-	(junction
-		(at 109.22 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7eb1b4e9-20ac-4e07-8120-0c8cbb2c7dce")
 	)
 	(junction
 		(at 139.7 99.06)
@@ -2121,10 +2198,22 @@
 		(uuid "91f08039-c4e0-4edd-923e-2031d66928b2")
 	)
 	(junction
+		(at 166.37 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98f56936-022b-477b-ac76-1a4b72c25601")
+	)
+	(junction
 		(at 124.46 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9927f5e2-79b6-4c4c-9178-1a3a492bcca0")
+	)
+	(junction
+		(at 241.3 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a838e416-fe4c-4d73-bfac-67b4417b1b73")
 	)
 	(junction
 		(at 168.91 100.33)
@@ -2145,24 +2234,12 @@
 		(uuid "f5b58b4a-c82b-4561-a07b-b856b9f3a68c")
 	)
 	(no_connect
-		(at 69.85 35.56)
-		(uuid "457e4823-50c2-4575-b1e4-ec2fc14219e3")
-	)
-	(no_connect
 		(at 69.85 30.48)
 		(uuid "64195273-519c-4cd4-a99b-892a45bfc2eb")
 	)
 	(no_connect
 		(at 132.08 95.25)
 		(uuid "752938ca-f81b-4abd-aef8-6759bb6010b3")
-	)
-	(no_connect
-		(at 35.56 27.94)
-		(uuid "aa621d38-9fab-4be9-8adb-cadf1b6aa152")
-	)
-	(no_connect
-		(at 69.85 27.94)
-		(uuid "e90c4de2-2129-4ede-b382-68785b913714")
 	)
 	(wire
 		(pts
@@ -2196,7 +2273,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 53.34) (xy 241.3 54.61)
+			(xy 241.3 53.34) (xy 241.3 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2256,6 +2333,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 41.91) (xy 196.85 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe4cd5f-7eaa-4ea8-bab1-f669ee58218d")
+	)
+	(wire
+		(pts
 			(xy 52.07 63.5) (xy 52.07 69.85)
 		)
 		(stroke
@@ -2283,6 +2370,16 @@
 			(type default)
 		)
 		(uuid "265f3d8e-dde3-401a-9357-b07e53b91568")
+	)
+	(wire
+		(pts
+			(xy 124.46 119.38) (xy 124.46 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "280daef8-3964-4d74-8d0a-3935dcd91057")
 	)
 	(wire
 		(pts
@@ -2336,7 +2433,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 43.18) (xy 232.41 43.18)
+			(xy 222.25 43.18) (xy 232.41 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2386,17 +2483,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 43.18) (xy 227.33 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bac6bc1-5fe6-407c-9a48-492e6538f7b9")
-	)
-	(wire
-		(pts
-			(xy 139.7 107.95) (xy 124.46 107.95)
+			(xy 139.7 107.95) (xy 134.62 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2416,6 +2503,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 99.06) (xy 114.3 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41ea122e-516b-4aaa-89d3-4492c93d2021")
+	)
+	(wire
+		(pts
 			(xy 60.96 58.42) (xy 60.96 62.23)
 		)
 		(stroke
@@ -2426,7 +2523,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 41.91) (xy 196.85 41.91)
+			(xy 186.69 41.91) (xy 190.5 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2456,6 +2553,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 101.6) (xy 100.33 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d8f438f-6074-4cbe-8638-714a7240452a")
+	)
+	(wire
+		(pts
 			(xy 63.5 93.98) (xy 69.85 93.98)
 		)
 		(stroke
@@ -2463,6 +2570,16 @@
 			(type default)
 		)
 		(uuid "4daec6e6-b152-4486-bfa4-8e5a8c691b6a")
+	)
+	(wire
+		(pts
+			(xy 166.37 92.71) (xy 171.45 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4de5245c-c248-4ca1-9136-8a17c4995ec9")
 	)
 	(wire
 		(pts
@@ -2546,13 +2663,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 99.06) (xy 114.3 99.06)
+			(xy 195.58 41.91) (xy 195.58 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "680be8f4-f5c7-4b65-bae8-bd8841ac56b2")
+		(uuid "68110764-7b48-4b14-a06f-efb85b52e915")
 	)
 	(wire
 		(pts
@@ -2603,6 +2720,16 @@
 			(type default)
 		)
 		(uuid "6cc59832-e301-48b6-903a-ed9d804a374a")
+	)
+	(wire
+		(pts
+			(xy 124.46 120.65) (xy 134.62 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fcaa654-96aa-4918-974c-29567983f5fe")
 	)
 	(wire
 		(pts
@@ -2666,6 +2793,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 43.18) (xy 260.35 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f1ba8fa-5eaa-4af7-ad1c-125889e95d49")
+	)
+	(wire
+		(pts
 			(xy 109.22 92.71) (xy 114.3 92.71)
 		)
 		(stroke
@@ -2673,6 +2810,16 @@
 			(type default)
 		)
 		(uuid "82f4af23-c1d8-4268-bdce-e1848dcaca5f")
+	)
+	(wire
+		(pts
+			(xy 241.3 58.42) (xy 241.3 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85f44e2c-663e-4cd1-906c-8fb3c0e8b9cc")
 	)
 	(wire
 		(pts
@@ -2726,7 +2873,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 92.71) (xy 171.45 92.71)
+			(xy 158.75 92.71) (xy 166.37 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2766,6 +2913,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 107.95) (xy 124.46 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a26aaa15-57f9-4823-b71c-bf378cda411b")
+	)
+	(wire
+		(pts
 			(xy 222.25 49.53) (xy 222.25 53.34)
 		)
 		(stroke
@@ -2793,6 +2950,16 @@
 			(type default)
 		)
 		(uuid "a9d038ed-0732-49b2-8c15-98e567300f71")
+	)
+	(wire
+		(pts
+			(xy 134.62 120.65) (xy 134.62 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab812b1d-436b-4385-9827-99b848808b9f")
 	)
 	(wire
 		(pts
@@ -2826,23 +2993,13 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 49.53) (xy 156.21 53.34)
+			(xy 190.5 41.91) (xy 195.58 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b4a58e40-396a-42c9-8cf6-c10308cec580")
-	)
-	(wire
-		(pts
-			(xy 109.22 95.25) (xy 109.22 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b689546b-3fca-4080-8fa8-ac1ab3980ad3")
+		(uuid "b5bfbccc-b55d-4507-b9df-938ef7a5b0f3")
 	)
 	(wire
 		(pts
@@ -2853,16 +3010,6 @@
 			(type default)
 		)
 		(uuid "bd29b4cf-2bac-4e21-9a73-f4edb63c4b20")
-	)
-	(wire
-		(pts
-			(xy 241.3 59.69) (xy 241.3 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bffe9919-9345-4e78-aa87-ba27f175e0dc")
 	)
 	(wire
 		(pts
@@ -2883,6 +3030,16 @@
 			(type default)
 		)
 		(uuid "c40e86f3-3977-4f45-9865-20435dce0f38")
+	)
+	(wire
+		(pts
+			(xy 134.62 107.95) (xy 134.62 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5c27f6e-fc15-4c94-8423-0f83e236542a")
 	)
 	(wire
 		(pts
@@ -2923,16 +3080,6 @@
 			(type default)
 		)
 		(uuid "d4873e64-cf0a-4532-9036-02ed2772fad5")
-	)
-	(wire
-		(pts
-			(xy 227.33 43.18) (xy 227.33 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d554f563-30f5-4a6c-bab5-725a4e1a4b44")
 	)
 	(wire
 		(pts
@@ -3006,16 +3153,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 43.18) (xy 266.7 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed927ae7-25e3-4b98-85f7-550ef10aaada")
-	)
-	(wire
-		(pts
 			(xy 151.13 107.95) (xy 151.13 114.3)
 		)
 		(stroke
@@ -3023,6 +3160,16 @@
 			(type default)
 		)
 		(uuid "f4798c2d-5d47-41d3-99c6-328d02afd71d")
+	)
+	(wire
+		(pts
+			(xy 260.35 43.18) (xy 266.7 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4928f57-17ef-4c72-9d88-6434c2a2e42b")
 	)
 	(wire
 		(pts
@@ -3084,6 +3231,16 @@
 		)
 		(uuid "34af3045-96e5-4426-9a44-59204799abed")
 	)
+	(label "3.3VA"
+		(at 69.85 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c8d5242-f704-407c-a643-bdd72e879ce8")
+	)
 	(label "Vout_diff"
 		(at 62.23 72.39 0)
 		(effects
@@ -3124,6 +3281,16 @@
 		)
 		(uuid "535e5904-7682-46dc-b813-8fa274c52155")
 	)
+	(label "enable"
+		(at 110.49 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "59271148-6950-418e-b7f1-3c74df604773")
+	)
 	(label "SDA"
 		(at 36.83 33.02 0)
 		(effects
@@ -3133,6 +3300,16 @@
 			(justify left bottom)
 		)
 		(uuid "64887ae5-9049-4f44-bec5-e2b3273edf49")
+	)
+	(label "enable"
+		(at 66.04 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77715679-d0f7-4527-8d82-1ac3644d4a87")
 	)
 	(label "SCL"
 		(at 132.08 55.88 0)
@@ -3164,6 +3341,16 @@
 		)
 		(uuid "993c882c-a6e0-44c1-9725-adace2a34cbf")
 	)
+	(label "5V"
+		(at 39.37 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9dc11d8e-621a-4d69-aa40-0e0c7e8eed88")
+	)
 	(label "SCL"
 		(at 66.04 97.79 0)
 		(effects
@@ -3173,6 +3360,16 @@
 			(justify left bottom)
 		)
 		(uuid "9f39993e-1723-4b4a-9456-af7e81970e24")
+	)
+	(label "5V"
+		(at 152.4 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b38dbdd5-abc9-403a-9721-7691207a5fb2")
 	)
 	(label "Vout_B"
 		(at 66.04 68.58 0)
@@ -3194,8 +3391,18 @@
 		)
 		(uuid "d76a47cf-5b78-41a5-b4bd-45c87546ff36")
 	)
+	(label "enable"
+		(at 232.41 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d83f7e70-5900-4e67-9004-88a550ac4da0")
+	)
 	(label "3.3V"
-		(at 41.91 115.57 180)
+		(at 43.18 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3213,6 +3420,16 @@
 			(justify right bottom)
 		)
 		(uuid "e67abd8a-7fc7-427e-91ed-b842576c0ec4")
+	)
+	(label "enable"
+		(at 160.02 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8f2ef10-6cf6-48ba-ab30-10d4475a316e")
 	)
 	(label "3.3VA"
 		(at 105.41 92.71 180)
@@ -3253,6 +3470,16 @@
 			(justify left bottom)
 		)
 		(uuid "f19f3e33-de65-466f-a13a-883e445c5112")
+	)
+	(label "5V"
+		(at 68.58 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f995762e-92ef-4c8c-b501-21fcce06c92e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3314,6 +3541,279 @@
 			(project "1p6V_to_m1p6V_bias_gum"
 				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 238.76 58.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "047292b2-c4a8-443c-a576-c7a442ef2523")
+		(property "Reference" "TP3"
+			(at 238.7981 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5029"
+			(at 236.22 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
+			(at 243.84 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 246.38 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 238.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 248.92 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 251.46 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 254 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 256.54 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 259.08 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 261.62 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 264.16 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 266.7 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 269.24 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 238.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 238.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "454204f3-4fa8-4867-8783-fc3f80b83f9f")
+		)
+		(instances
+			(project "1p6V_to_m1p6V_bias_gum"
+				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 134.62 116.84 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f4a8dca-ad9d-4f5b-8e52-8da0675a85b3")
+		(property "Reference" "R11"
+			(at 139.954 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 132.588 118.618 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 134.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part Number" "P10KGCT-ND"
+			(at 134.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "667-ERJ-3GEYJ103V"
+			(at 134.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C98220"
+			(at 138.43 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0d169d2-cd6d-4a6e-83bb-538e6d1299f0")
+		)
+		(pin "2"
+			(uuid "a48daa69-c591-45d9-9cd8-8239f8dc741d")
+		)
+		(instances
+			(project "1p6V_to_m1p6V_bias_gum"
+				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -3456,7 +3956,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C1590"
 			(at 44.2468 109.3216 0)
 			(effects
 				(font
@@ -3617,7 +4117,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C1590"
 			(at 72.1868 108.0516 0)
 			(effects
 				(font
@@ -3659,7 +4159,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "10u"
 			(at 215.9 48.006 0)
 			(effects
 				(font
@@ -3755,7 +4255,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "10u"
 			(at 93.98 100.076 0)
 			(effects
 				(font
@@ -3888,6 +4388,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C38987"
+			(at 110.49 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "dea6767c-4e64-456c-b1e5-2ab3919003b2")
 		)
@@ -3930,7 +4439,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "10u"
 			(at 149.6568 45.593 0)
 			(effects
 				(font
@@ -4184,7 +4693,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 119.38 0)
+		(at 124.46 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4192,7 +4701,7 @@
 		(dnp no)
 		(uuid "2f56196b-46a4-4b38-b68f-c3e8c9c1de5e")
 		(property "Reference" "#PWR09"
-			(at 124.46 125.73 0)
+			(at 124.46 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4201,7 +4710,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.587 123.7742 0)
+			(at 124.587 125.0442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +4718,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 119.38 0)
+			(at 124.46 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +4727,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 119.38 0)
+			(at 124.46 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +4736,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 119.38 0)
+			(at 124.46 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4319,7 +4828,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C1607"
 			(at 269.0368 45.8216 0)
 			(effects
 				(font
@@ -4403,6 +4912,183 @@
 			(project "1p6V_to_m1p6V_bias_gum"
 				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 260.35 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a93312a-c06f-4f3b-b315-07a998f99fe7")
+		(property "Reference" "TP2"
+			(at 259.08 40.6782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 260.35 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 255.27 45.72 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 255.27 48.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 260.35 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 255.27 50.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 255.27 53.34 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 255.27 55.88 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 255.27 58.42 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 255.27 60.96 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 255.27 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 255.27 66.04 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 255.27 68.58 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 255.27 71.12 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 260.35 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 260.35 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31629c15-f402-43b3-9440-e08f533f9fe4")
+		)
+		(instances
+			(project "1p6V_to_m1p6V_bias_gum"
+				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -4561,16 +5247,26 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3VA")
-		(at 156.21 53.34 180)
+		(lib_id "dk_Test-Points:5029")
+		(at 166.37 90.17 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "46de57c2-76c0-4b96-adcb-a90a3076a6c7")
-		(property "Reference" "#PWR025"
-			(at 156.21 49.53 0)
+		(fields_autoplaced yes)
+		(uuid "581e5008-3163-49c6-a16d-6015be678fc6")
+		(property "Reference" "TP4"
+			(at 165.1 90.2082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 166.37 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4578,17 +5274,28 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3.3V"
-			(at 154.432 57.15 0)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 161.29 95.25 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 156.21 53.34 0)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 161.29 97.79 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 166.37 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4596,8 +5303,98 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 156.21 53.34 0)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 161.29 100.33 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 161.29 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 161.29 105.41 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 161.29 107.95 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 161.29 110.49 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 161.29 113.03 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 161.29 115.57 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 161.29 118.11 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 161.29 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 166.37 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,21 +5402,199 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 156.21 53.34 0)
+		(property "LCSC" "C238131"
+			(at 166.37 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "a00d122c-94ea-4e16-907d-2a468db22a6f")
+			(uuid "83919adc-995e-4425-b3bb-731828264785")
 		)
 		(instances
 			(project "1p6V_to_m1p6V_bias_gum"
 				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
-					(reference "#PWR025")
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Test-Points:5029")
+		(at 190.5 39.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58d4648e-4f0c-4d5e-95b5-ca372a8ab415")
+		(property "Reference" "TP1"
+			(at 189.23 39.4082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5029"
+			(at 190.5 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 185.42 44.45 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 185.42 46.99 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC TEST POINT MINIATURE"
+			(at 190.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "36-5029CT-ND"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5029"
+			(at 185.42 52.07 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Test and Measurement"
+			(at 185.42 54.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Test Points"
+			(at 185.42 57.15 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.keyelco.com/product-pdf.cfm?p=1358"
+			(at 185.42 59.69 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631"
+			(at 185.42 62.23 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "PC TEST POINT MINIATURE"
+			(at 185.42 64.77 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 185.42 67.31 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 185.42 69.85 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C238131"
+			(at 190.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C238131"
+			(at 190.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88770e46-afcb-469c-9a67-32281bb68215")
+		)
+		(instances
+			(project "1p6V_to_m1p6V_bias_gum"
+				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -4644,7 +5619,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33.2k"
+		(property "Value" "53.6k"
 			(at 149.098 107.696 90)
 			(effects
 				(font
@@ -4698,7 +5673,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C23074"
 			(at 154.94 107.95 0)
 			(effects
 				(font
@@ -4813,7 +5788,7 @@
 				)
 			)
 		)
-		(property "Footprint" "heep-footprints:S8-package"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 123.19 96.52 0)
 			(effects
 				(font
@@ -4966,7 +5941,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 186.69 50.8 0)
 			(effects
 				(font
@@ -5011,7 +5986,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C25545"
 			(at 190.5 53.34 0)
 			(effects
 				(font
@@ -5171,7 +6146,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C1590"
 			(at 124.5616 40.8432 0)
 			(effects
 				(font
@@ -5214,7 +6189,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33.2k"
+		(property "Value" "53.6k"
 			(at 137.414 98.552 90)
 			(effects
 				(font
@@ -5268,7 +6243,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C23074"
 			(at 143.51 97.79 0)
 			(effects
 				(font
@@ -5376,7 +6351,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "7.03k"
+		(property "Value" "11.3k"
 			(at 137.668 107.696 90)
 			(effects
 				(font
@@ -5430,7 +6405,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C22860"
 			(at 143.51 107.95 0)
 			(effects
 				(font
@@ -5449,6 +6424,71 @@
 			(project "1p6V_to_m1p6V_bias_gum"
 				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "914eb037-c69d-4d24-abae-7ef450ffa580")
+		(property "Reference" "#PWR013"
+			(at 195.58 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 195.58 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f015f67-0981-40f1-89f9-56ceae69466b")
+		)
+		(instances
+			(project "1p6V_to_m1p6V_bias_gum"
+				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5521,102 +6561,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 241.3 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f2c44eb-cd49-4c0a-968c-3312b63568b0")
-		(property "Reference" "C5"
-			(at 234.95 55.8546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 234.95 58.166 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 241.3 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Part Number" "399-9158-1-ND"
-			(at 241.3 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "80-C0805C104Z3V"
-			(at 241.3 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C19702"
-			(at 243.6368 55.9816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9f7462d8-4e53-4abb-8446-a7dc4c4ded88")
-		)
-		(pin "2"
-			(uuid "2441c759-df8a-4108-bdc4-75b04ab1a9fd")
-		)
-		(instances
-			(project "1p6V_to_m1p6V_bias_gum"
-				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 124.46 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5633,7 +6577,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "10u"
 			(at 118.11 117.856 0)
 			(effects
 				(font
@@ -5842,6 +6786,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 195.58 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b488a32e-8298-4f18-a118-4e35e4e7dbe7")
+		(property "Reference" "C5"
+			(at 197.9168 45.8216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 197.9168 48.133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 195.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part Number" "399-9158-1-ND"
+			(at 195.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "80-C0805C104Z3V"
+			(at 195.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1607"
+			(at 197.9168 45.8216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f22fe6f-83a8-47c8-ad8c-8b8cf16a0f15")
+		)
+		(pin "2"
+			(uuid "67e9418a-1711-4fa1-b993-0978584b901d")
+		)
+		(instances
+			(project "1p6V_to_m1p6V_bias_gum"
+				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 257.81 45.72 0)
 		(mirror y)
@@ -5914,7 +6954,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C25976"
 			(at 261.62 48.26 0)
 			(effects
 				(font
@@ -6100,35 +7140,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 156.21 46.99 0)
-		(mirror y)
+		(lib_id "power:GND")
+		(at 41.91 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cad18a0f-4529-4300-9aee-eb69cbe4a9da")
-		(property "Reference" "R9"
-			(at 161.544 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 154.178 48.768 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 156.21 46.99 0)
+		(uuid "cdcdb143-a124-4c80-b25e-89abb5ad0490")
+		(property "Reference" "#PWR012"
+			(at 41.91 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6136,8 +7157,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 156.21 46.99 0)
+		(property "Value" "GND"
+			(at 42.037 119.9642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6146,34 +7184,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 156.21 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Part Number" "P10KGCT-ND"
-			(at 156.21 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "667-ERJ-3GEYJ103V"
-			(at 156.21 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C98220"
-			(at 160.02 49.53 0)
+			(at 41.91 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6182,15 +7193,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d43f9067-3c65-4998-9a3c-4fc3de3128c3")
-		)
-		(pin "2"
-			(uuid "738f5d8d-d8d0-4f6a-a9cb-86be25130bdf")
+			(uuid "b1c4982d-8b28-4b65-b411-424106ddb025")
 		)
 		(instances
 			(project "1p6V_to_m1p6V_bias_gum"
 				(path "/de58cee2-3d62-448a-b817-8901e0b7400c"
-					(reference "R9")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6331,7 +7339,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 101.6 0)
+		(at 100.33 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6339,7 +7347,7 @@
 		(dnp no)
 		(uuid "e03ec952-9f57-4bc5-902e-6e03b6b4f5e3")
 		(property "Reference" "#PWR07"
-			(at 100.33 107.95 0)
+			(at 100.33 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6348,7 +7356,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.457 105.9942 0)
+			(at 100.457 113.6142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6356,7 +7364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 101.6 0)
+			(at 100.33 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +7373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 101.6 0)
+			(at 100.33 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6374,7 +7382,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.33 101.6 0)
+			(at 100.33 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6402,7 +7410,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "e4b8ae0a-d66b-47fd-8803-3cf818fe98d4")
 		(property "Reference" "R6"
 			(at 175.26 95.25 0)
@@ -6413,7 +7421,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 169.164 96.52 90)
 			(effects
 				(font
@@ -6609,6 +7617,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C34678"
+			(at 241.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8ffa5313-63b2-45dc-b5f8-91f370f35a43")
 		)
@@ -6771,7 +7788,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C23034"
 			(at 261.62 54.61 0)
 			(effects
 				(font
@@ -6821,7 +7838,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
 			(at 54.61 97.79 0)
 			(effects
 				(font
@@ -6841,6 +7858,15 @@
 		)
 		(property "Description" ""
 			(at 54.61 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191581"
+			(at 54.61 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6903,7 +7929,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 186.69 44.45 0)
 			(effects
 				(font
@@ -6948,7 +7974,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C25530"
 			(at 190.5 46.99 0)
 			(effects
 				(font

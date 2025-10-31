@@ -15310,7 +15310,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3911698"
+		(property "LCSC" "C844996"
 			(at 421.64 359.664 0)
 			(effects
 				(font
@@ -16929,7 +16929,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C41417342"
+		(property "LCSC" "C5160786"
 			(at 65.786 302.641 0)
 			(effects
 				(font
@@ -18558,7 +18558,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-12-1EP_3x3mm_P0.45mm_EP1.65x2.38mm_ThermalVias"
+		(property "Footprint" "heep_footprints:MAX17577-12-TDFN-EP"
 			(at 401.32 364.49 0)
 			(effects
 				(font
