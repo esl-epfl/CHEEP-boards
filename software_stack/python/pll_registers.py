@@ -1,0 +1,78 @@
+"""file with all the constants related to the PLL, specially the registers"""
+
+#from machine import Pin
+
+class PLLReg:
+
+    DEVICE_STATUS = 0
+    INTERRUPT_STATUS_STICKY = 1
+    INTERRUPT_STATUS_MASK = 2
+    OUTPUT_ENABLE_CONTROL = 3
+
+    PLL_A = 0
+    PLL_B = 1
+
+    PLL_I2C_ADDRESS_PICO = 96
+    PLL_I2C_ADDRESS_PyFtdi = 61
+    PLL_RESET_REGISTER_177 = 177
+    CLK2_CONTROL = 18
+
+    MULTISYNTH0_PARAMETERS_1 = 44
+    MULTISYNTH1_PARAMETERS_1 = 52
+    MULTISYNTH2_PARAMETERS_1 = 60
+    MULTISYNTH3_PARAMETERS_1 = 68 
+    MULTISYNTH4_PARAMETERS_1 = 76
+    MULTISYNTH5_PARAMETERS_1 = 84
+    MULTISYNTH6_PARAMETERS_1 = 92
+
+    MULTISYNTH0_PARAMETERS_3 = 42
+    MULTISYNTH1_PARAMETERS_3 = 50
+    MULTISYNTH2_PARAMETERS_3 = 58
+    MULTISYNTH3_PARAMETERS_3 = 66
+    MULTISYNTH4_PARAMETERS_3 = 74
+    MULTISYNTH5_PARAMETERS_3 = 82
+    MULTISYNTH6_PARAMETERS_3 = 90
+
+    #CLk 6 and 7 allow only even Multisynth divider interger between 6 and 254  (R division)
+    #Function for CLK 6 & 7 not yet implemented 
+
+
+    CRYSTAL_FREQ_25MHZ = 25000000
+
+    CLKOUT_MIN_FREQ = 4000
+    CRYSTAL_INTERNAL_LOAD_CAPACITANCE = 183
+    MULTISYNTH_C_MAX = 1048575
+
+    PLL_INPUT       = 15
+
+    CLK0_CONTROL    = 16
+    CLK1_CONTROL    = 17
+    CLK2_CONTROL    = 18
+    CLK3_CONTROL    = 19
+    CLK4_CONTROL    = 20
+    CLK5_CONTROL    = 21
+    CLK6_CONTROL    = 22
+    CLK7_CONTROL    = 23
+
+
+    CRYSTAL_LOAD_6PF    = (1<<6)
+    CRYSTAL_LOAD_8PF    = (2<<6)
+    CRYSTAL_LOAD_10PF   = (3<<6)
+
+    R_DIV_1   = 0
+    R_DIV_2   = 1
+    R_DIV_4   = 2
+    R_DIV_8   = 3
+    R_DIV_16  = 4
+    R_DIV_32  = 5
+    R_DIV_64  = 6
+    R_DIV_128 = 7
+
+
+
+    PIN_ENABLE_VIO_POWER = 0
+    PIN_SCL = 21
+    PIN_SDA = 20
+    PIN_CLK_HIGH_Z = 18
+
+
