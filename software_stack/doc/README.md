@@ -52,7 +52,8 @@ optional arguments:
 - ID 0x45534C01 (-w0 0x45534C01)
 - 150mOhm Shunt resistor (-w1 150)
 - INA212, i.e. gain 1000 -w2 1000
-./cheep_deploy.py -C 1 -w0 0x45534C01 -w1 150 -w2 1000 ftdi://ftdi:4232:1:1/2
+- 1800mV maximum reachable voltage (optional), keep empty if board hasnt been modified.
+./cheep_deploy.py -C 1 -w0 0x45534C01 -w1 150 -w2 1000 -w3 1800 ftdi://ftdi:4232:1:1/2
 
 # Deploying a PosNegSupply
 - Chewing gum 1 (-C 1)

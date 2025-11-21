@@ -8,7 +8,7 @@ from pyftdi.i2c import I2cController, I2cNackError
 i2c = I2cController()
 i2c.configure("ftdi://ftdi:4232:1:1/2")
 cb = CheepBoard(i2c)
-cb.pll.set_frequency(100_000_000)
+cb.pll.set_frequency(10_000_000)
 
 # Ensure the correct chewing gums are installed
 expected_configuration = {

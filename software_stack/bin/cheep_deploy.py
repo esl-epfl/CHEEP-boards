@@ -55,9 +55,9 @@ def main():
             argparser.error(str(exc))
 
         i2c = I2cController()
-        cb = cheep.CheepBoard(i2c)
         i2c.set_retry_count(1)
         i2c.configure(args.device)
+        cb = cheep.CheepBoard(i2c)
         cb.set_i2c_mode()
         eeprom = cb.get_chewing_gum(args.chewing_gum)
         for i in range(32):
