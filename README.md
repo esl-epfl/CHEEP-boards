@@ -37,7 +37,9 @@ Additionally, through the FTDI you can control any of the I2C devices on the boa
 ## 150 positions connector
 
 You cancheck the [standard](./docs/150%20pin%20cheep%20board%20connector%20standard.pdf):
-<iframe src="./docs/150 pin cheep board connector standard.pdf" width="100%" height="500" frameborder="0" />
+
+<img src="./docs/150 pin cheep board connector standard.png" width="100%" style="display:inline-block;">
+</p>
 
 There is also a symbol and footprint you can use in your PCB to make sure you are using the right assignment.
 
