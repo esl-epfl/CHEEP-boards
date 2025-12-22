@@ -28,7 +28,7 @@ class PLLController:
             I2CWrapper: Wrapper for I2C communication.
             crystalFreq (int): Frequency of the crystal oscialltor. Defaults to PLLReg.CRYSTAL_FREQ_25MHZ.
 
-        
+
         """
         self.crystalFreq = crystalFreq
         self.plla_freq = 0
@@ -102,7 +102,7 @@ class PLLController:
     def set_frequency(self, target_frequency: int, output: int = 0, pll: int = PLLReg.PLL_A, mult: int = 32, roundit: bool = False) -> None:
         """
         Set the frequency of the PLL to the target_frequency.
-        Decides if a frequency is below the minimum frequency. R divider needed for frequency lower then 500kHz down to 4kHz. 
+        Decides if a frequency is below the minimum frequency. R divider needed for frequency lower then 500kHz down to 4kHz.
         Checks if the desired frequency is less then 500kHz down to 4kHz. If so then use resistors.
         Initilaize the Feedback Multiplier.
 
@@ -110,20 +110,21 @@ class PLLController:
             target_frequency (int): Desired frequency for the PLL.
             output (int): Choose the output clock (clk0-clk7).
             pll (int): Choose which PLL (A or B) provides f_vco.
-            roundit (bool): Rounds fraction division to nearest int value. Reduces jitter by loss of frequency precision.  
+            roundit (bool): Rounds fraction division to nearest int value. Reduces jitter by loss of frequency precision.
         """
         print(f"------------------------------------\n Set frequency to \n {target_frequency} \n")
 
         if (target_frequency >= 120_000_000):
             self.high_speed(target_frequency, output, pll, roundit)
             return
-        
+
         mult = 36 # input clk multiplier must be between 15 and 90
 
         self.setup_feedbackMultisynth(pll, mult, 0, 1)
 
         freq = target_frequency
         r_div = PLLReg.R_DIV_1
+        register = 60 #MULTISYNTH2_PARAMETERS_1
         print("R not hitted")
         if (freq >= PLLReg.CLKOUT_MIN_FREQ and freq < PLLReg.CLKOUT_MIN_FREQ * 2):
             r_div = PLLReg.R_DIV_128
@@ -140,10 +141,12 @@ class PLLController:
         elif (freq >= PLLReg.CLKOUT_MIN_FREQ*8 and freq < PLLReg.CLKOUT_MIN_FREQ * 16):
             r_div = PLLReg.R_DIV_16
             freq *= 16
+            register = 44 # MULTISYNTH0_PARAMETERS_1
             print(f"R hitted: {r_div}")
         elif (freq >= PLLReg.CLKOUT_MIN_FREQ*16 and freq < PLLReg.CLKOUT_MIN_FREQ * 128):
             r_div = PLLReg.R_DIV_8
             freq *= 8
+            register = 44 # MULTISYNTH0_PARAMETERS_1
             print(f"R hitted: {r_div}")
         elif (freq >= PLLReg.CLKOUT_MIN_FREQ*32 and freq < PLLReg.CLKOUT_MIN_FREQ * 64):
             r_div = PLLReg.R_DIV_4
@@ -171,7 +174,7 @@ class PLLController:
             div = fvco//freq
             if value >= 0.5:
                 div += 1
-        else:            
+        else:
             div = fvco // freq
             num = fvco % freq
             denom = freq
@@ -183,7 +186,7 @@ class PLLController:
                     num //= 2
                     denom //= 2
 
-        
+
 
         self.reset_pll()
 
@@ -194,9 +197,9 @@ class PLLController:
 
         self.setupMultisynth(output, div, num, denom)
 
-        self.setupRdiv(output, r_div)
+        self.setupRdiv(output, r_div, register)
 
-        
+
 
     def high_impedance(self, enable: bool) -> None:
         """
@@ -329,7 +332,7 @@ class PLLController:
 
         div = (target_frequency*4) // PLLReg.CRYSTAL_FREQ_25MHZ
         num = ((target_frequency*4) % PLLReg.CRYSTAL_FREQ_25MHZ)//1_000_000
-        denom = PLLReg.CRYSTAL_FREQ_25MHZ//1_000_000          
+        denom = PLLReg.CRYSTAL_FREQ_25MHZ//1_000_000
 
         if roundit == True:
             value = num/denom
@@ -353,7 +356,7 @@ class PLLController:
         return
 
 
-    def setupRdiv(self, output: int = 2, div: int = 1) -> None:
+    def setupRdiv(self, output: int = 2, div: int = 1, register=60) -> None:
         """
         Setup the R divisor, for only one outpupt clk
 
@@ -365,7 +368,7 @@ class PLLController:
         Rreg = self.multisyn_p1.get(output)
         print(f"output number = {Rreg}")
         print(f"in register: {bin((div & 0x07) << 4)}")
-        return self.reg_write(60, (div & 0x07) << 4)
+        return self.reg_write(register, (div & 0x07) << 4)
 
     def enableOutput(self, enabled: bool) -> None:
         """
@@ -429,9 +432,9 @@ class PLLController:
     def invertclk(self, output: int) -> None:
         """
         Invert the output clock.
-        
+
         Parameters:
-            output (int): Choose the output clock (clk0-clk7).       
+            output (int): Choose the output clock (clk0-clk7).
         """
         clkControlReg = self.reg_read(self.clk_control_dict.get(output))
         clkControlReg = clkControlReg ^ (1<<4) #flip bit by xor it
@@ -446,9 +449,9 @@ class PLLController:
             strength (int): Choose the driving strength (2, 4, 6, 8mA).
         """
         clkControlReg = self.reg_read(self.clk_control_dict.get(output))
-        if strength == 2: 
+        if strength == 2:
             clkControlReg = clkControlReg & ~(1<<0)
-            clkControlReg = clkControlReg & ~(1<<1)  
+            clkControlReg = clkControlReg & ~(1<<1)
         if strength == 4:
             clkControlReg = clkControlReg & ~(1<<1)
             clkControlReg |= (1<<0)
@@ -471,7 +474,7 @@ class PLLController:
         clkControlReg = self.reg_read(self.clk_control_dict.get(output))
         if pll == 0:
             clkControlReg = clkControlReg & ~(1<<5)
-        if pll == 1: 
+        if pll == 1:
             clkControlReg |= (1<<5)
         self.reg_write(self.clk_control_dict.get(output), clkControlReg)
 
@@ -548,13 +551,13 @@ class FrequencyIterate:
         self.output = output
         self.pll = pll
         self.pll_controller.set_frequency(self.current, self.output, self.pll, roundit = roundit)
-    
+
     def __iter__(self) -> None:
         """
         Returns the iteratir object itself.
         """
         return self
-    
+
     def __next__(self) -> None:
         """
         Returns the next item in the sequence.
@@ -564,7 +567,7 @@ class FrequencyIterate:
         if self.current < self.end_freq:
             return self.current
         raise StopIteration
-    
+
 
 if __name__ == "__main__":
     # Example usage of the I2CWrapper and PLLController classes
@@ -595,7 +598,7 @@ if __name__ == "__main__":
     # print("next")
     # next(myiter)
 
-    #pll_controller.invertclk(output)    
+    #pll_controller.invertclk(output)
     #pll_controller.powerdown(output)
     #pll_controller.powerup(output)
 

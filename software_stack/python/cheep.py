@@ -5,7 +5,7 @@ from pll_registers import PLLReg
 
 I2C_TREE = {
     "MBID" : {"SW":{0x70:0, 0x71:1<<7}, "label": "Mainboard EEPROM"},
-    "MBIF" : {"SW":{0x70:1<<7, 0x71:0}, "label": "Mainboard Infrastructure"}, 
+    "MBIF" : {"SW":{0x70:1<<7, 0x71:0}, "label": "Mainboard Infrastructure"},
     "CHEEP": {"SW":{0x70:1<<6, 0x71:0}, "label": "Cheep Chip Testing PCB"},
     "EXT"  : {"SW":{0x70:0, 0x71:1<<6}, "label": "External I2C Interface"},
     "CG1"  : {"SW":{0x70:1<<2, 0x71:0}, "label": "Chewing Gum Board 1"},
@@ -34,7 +34,7 @@ class CheepBoard:
         gpio = self.i2c.get_gpio()
         gpio.set_direction(0x20, 0x20)
         gpio.write(0x20)
-    
+
     def set_i2c_mux(self, ID):
         if ID in I2C_TREE and self.current_i2c_mux != ID:
             for i2c_addr,i2c_data in I2C_TREE[ID]["SW"].items():
@@ -64,7 +64,7 @@ class CheepBoard:
             else:
                 return ChewingGum(self, eeprom.id)
         return None
-    
+
     def enable_chewing_gums(self, masks=(0xff,0x0f)):
         self.set_i2c_mux("MBIF")
         port = self.i2c.get_port(self.cg_en_io_exp_addr)
@@ -73,7 +73,7 @@ class CheepBoard:
         port.write_to(0x7,[0xf0])
         port.write_to(0x2, [masks[0]])
         port.write_to(0x3, [masks[1]])
-        
+
     def disable_chewing_gums(self, masks=(0x00,0x00)):
         self.set_i2c_mux("MBIF")
         port = self.i2c.get_port(self.cg_en_io_exp_addr)
@@ -94,7 +94,7 @@ class CheepPllI2CWrapper(pllI2CWrapper):
         super().__init__(device_address)
         self.cb=cb
 
-    def write_data(self, reg: int, data: int) -> None: 
+    def write_data(self, reg: int, data: int) -> None:
         """
         Write data to the specified register_address on the I2C device.
 
@@ -105,7 +105,7 @@ class CheepPllI2CWrapper(pllI2CWrapper):
         self.cb.set_i2c_mux("MBIF")
         msg = bytearray()
         msg.append(data)
-        self.cb.i2c.get_port(self.addr).write_to(reg, msg) 
+        self.cb.i2c.get_port(self.addr).write_to(reg, msg)
 
     def read_data(self, reg: int, num_bytes: int = 1) -> int:
         """
@@ -122,7 +122,7 @@ class CheepPllI2CWrapper(pllI2CWrapper):
         data = self.cb.i2c.get_port(self.addr).read_from(reg,num_bytes)
         data = int.from_bytes(data, byteorder ="big") #read value from PyFtdi gives back bytearray but pll_register needs integer
         return data
-        
+
 
 class ChEEPROM:
     def __init__(self,cb,id):
@@ -131,7 +131,7 @@ class ChEEPROM:
         self.eeprom_addr=0x50
         self.wordsize=4
         self.base_address=0x0
-    
+
     def __str__(self):
         return("ChEEPROM 0x{:4x} / {}".format(self.get_id(), self.get_eui64()))
 
@@ -146,7 +146,7 @@ class ChEEPROM:
             b = val.to_bytes(4,byteorder="big",signed=False)
             port.write_to(self.base_address+idx*self.wordsize,b)
         except I2cNackError:
-            return None    
+            return None
 
     def select_i2c(self):
         self.cb.set_i2c_mux(self.id)
@@ -156,7 +156,7 @@ class ChEEPROM:
     def get_eui48(self):
         self.select_i2c()
         port = self.cb.i2c.get_port(self.eeprom_addr)
-        try: 
+        try:
             b = port.read_from(0xfA,6)
             return  ":".join(["{:02X}".format(c) for c in b])
         except I2cNackError:
@@ -164,7 +164,7 @@ class ChEEPROM:
     def get_eui64(self):
         self.select_i2c()
         port = self.cb.i2c.get_port(self.eeprom_addr)
-        try: 
+        try:
             b = port.read_from(0xfA,6)
             d = b[:3] + b'\xff\xfe' + b[3:]
             return  ":".join(["{:02X}".format(c) for c in d])
@@ -173,7 +173,7 @@ class ChEEPROM:
     def get_id(self):
         self.select_i2c()
         port = self.cb.i2c.get_port(self.eeprom_addr)
-        try: 
+        try:
             b = port.read_from(0x0,4)
             return int.from_bytes(b,byteorder="big",signed=False)
         except I2cNackError:
@@ -184,7 +184,7 @@ class ChewingGum(ChEEPROM):
         super().__init__(cb,id)
         self.type="UnknownChewingGum"
     def __str__(self):
-        return "Unknown ChewingGum with ID 0x{:8x} / {}".format(self.get_id(), self.get_eui64())
+        return "Unknown ChewingGum with ID 0x{:8x} ({}) / {}".format(self.get_id(), bytes.fromhex(f"{self.get_id():08x}").decode(),self.get_eui64())
     def check(self, configuration):
         if "type" in configuration:
             expected = configuration["type"]
