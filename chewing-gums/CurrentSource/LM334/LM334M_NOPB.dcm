@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM334M_NOPB
+D Adjustable current converter,LM334M SO8
+K
+F http://www.ti.com/lit/ds/symlink/lm334.pdf
+$ENDCMP
+#
+#End Doc Library
