@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "heep-footprints")(type "KiCad")(uri "${KIPRJMOD}/../../htb/heep_footprints.pretty")(options "")(descr ""))
+)
