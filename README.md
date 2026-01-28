@@ -31,7 +31,6 @@ Additionally, through the FTDI you can control any of the I2C devices on the boa
 
 ### 🪲 Bugs and needed improvements
 * We need contributions on the software stack to control the chewing gums and on-board GPIOs.
-* The LEDs are bright as hell, it would be nice to chill those guys down.
 * Setting different on-board IO voltages introduces weird behaviors on the LEDs, some of which are floating to be controlled by the breakout board. We should handle this better.
 
 ## 150 positions connector
@@ -64,7 +63,7 @@ It's an voltage reference with a shunt to measure current. You can:
 You can create your own chewing gum and contribute it to this project. You can use [the template](./chewing-gums/template/) to make sure you use the right footprint and pinout :)
 
 ### 🪲 Bugs and needed improvements
-* We missed a 180 kΩ resistor in series between the dac output and the LDO reference (in case you want to control them through DAC)
+* We missed a 180 kΩ resistor in series between the DAC output and the LDO reference (in case you want to control them through DAC)
 * It would be nice to have a TH connector for the shunt in case you want to use different ranges
 * It would be nice to have a TH connector for the LDO resistive divider in case you want to use different ranges
 
