@@ -3945,6 +3945,180 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_DPST_x2"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_DPST_x2"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DPST_x2_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DPST_x2_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SW_DPST_x2_2_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -12260,7 +12434,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 328.93) (xy 222.885 328.93)
+			(xy 215.9 328.93) (xy 224.79 328.93)
 		)
 		(stroke
 			(width 0)
@@ -12597,6 +12771,16 @@
 			(type default)
 		)
 		(uuid "e4d5f9d3-42fe-4897-a352-040c53be12a0")
+	)
+	(wire
+		(pts
+			(xy 234.95 328.93) (xy 243.84 328.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4da9ad8-5130-44e0-9821-6aeade73bd51")
 	)
 	(wire
 		(pts
@@ -13728,7 +13912,7 @@
 		)
 		(uuid "7af9f9a2-0072-4b72-ba4d-46b479004ddf")
 	)
-	(label "VUSB"
+	(label "VBUS"
 		(at 217.805 328.93 0)
 		(effects
 			(font
@@ -14841,7 +15025,7 @@
 	)
 	(hierarchical_label "VUSB"
 		(shape output)
-		(at 222.885 328.93 0)
+		(at 243.84 328.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15351,7 +15535,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "5k"
 			(at 508.635 262.89 90)
 			(effects
 				(font
@@ -18708,6 +18892,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 229.87 328.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "497ca70f-2327-441f-8017-ea0848ebf8f1")
+		(property "Reference" "SW2"
+			(at 229.87 323.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 229.87 326.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:SW_TE_1825255-1"
+			(at 229.87 328.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 328.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+			(at 229.87 328.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea4a857d-fa5f-495a-b4cd-975bbf23d321")
+		)
+		(pin "3"
+			(uuid "ae35d710-40d0-4a38-bd61-af0585a4220b")
+		)
+		(pin "4"
+			(uuid "6a859b39-4db8-458e-9363-7c347233654b")
+		)
+		(pin "1"
+			(uuid "18523825-396e-49ec-b043-4de942f2e826")
+		)
+		(instances
+			(project ""
+				(path "/6198f783-b154-4adf-87fa-b1d9cb913fe2"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 200.66 344.17 0)
 		(unit 1)
@@ -19000,7 +19258,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "5k"
 			(at 336.55 307.34 90)
 			(effects
 				(font
@@ -19206,7 +19464,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "5k"
 			(at 508.635 267.97 90)
 			(effects
 				(font
@@ -20076,7 +20334,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "5k"
 			(at 447.04 369.57 90)
 			(effects
 				(font
@@ -21326,7 +21584,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "5k"
 			(at 508.635 273.05 90)
 			(effects
 				(font
@@ -25096,7 +25354,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "5k"
 			(at 337.82 251.46 90)
 			(effects
 				(font
@@ -25269,7 +25527,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "5k"
 			(at 336.55 342.9 90)
 			(effects
 				(font
