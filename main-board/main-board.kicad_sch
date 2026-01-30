@@ -14858,6 +14858,28 @@
 			)
 		)
 	)
+	(global_label "VUSB"
+		(shape input)
+		(at 243.84 328.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "1e0e7e84-5174-401b-865f-41309a432843")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.2546 328.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
 		(at 247.396 121.031 0)
@@ -15022,17 +15044,6 @@
 			(justify left)
 		)
 		(uuid "57544ccd-ac72-4edc-b684-0c88fb5ade9d")
-	)
-	(hierarchical_label "VUSB"
-		(shape output)
-		(at 243.84 328.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cfb95a53-1a44-4e4d-9307-9cc4110525ae")
 	)
 	(hierarchical_label "USB_D+"
 		(shape output)
