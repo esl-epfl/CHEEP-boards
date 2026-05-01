@@ -1,4 +1,4 @@
-# Welcome to the CHEEEP boards!
+# Welcome to the CHEEP boards!
 
 This is a set of PCBs to test, in principle, [X-HEEP](github.com/esl-epfl/x-heep) chips (CHEEPs)... but, you can use it to test any chip you want, for what it matters.
 
